@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team East Backtester Dashboard</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<script>
+if (typeof Plotly === 'undefined') {
+  document.write('<script src="plotly.min.js"><\/script>');
+}
+</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #0d1117; color: #c9d1d9; }
+
+  .header {
+    background: #161b22; border-bottom: 1px solid #30363d; padding: 12px 24px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .header h1 { font-size: 18px; font-weight: 600; color: #58a6ff; }
+
+  .controls {
+    background: #161b22; border-bottom: 1px solid #30363d; padding: 10px 24px;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .controls label { font-size: 13px; color: #8b949e; }
+  .controls select, .controls input[type="file"] {
+    background: #0d1117; border: 1px solid #30363d; color: #c9d1d9;
+    padding: 6px 10px; border-radius: 6px; font-size: 13px;
+  }
+  .controls select:focus { border-color: #58a6ff; outline: none; }
+
+  .btn {
+    background: #21262d; border: 1px solid #30363d; color: #c9d1d9;
+    padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 13px;
+  }
+  .btn:hover { background: #30363d; }
+  .btn.active { background: #1f6feb; border-color: #1f6feb; color: #fff; }
+
+  .drop-zone {
+    border: 2px dashed #30363d; border-radius: 12px; padding: 60px 40px;
+    text-align: center; margin: 40px auto; max-width: 600px; cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  .drop-zone:hover, .drop-zone.dragover { border-color: #58a6ff; }
+  .drop-zone h2 { color: #58a6ff; margin-bottom: 8px; }
+  .drop-zone p { color: #8b949e; font-size: 14px; }
+
+  .dashboard { display: none; }
+
+  .charts-grid {
+    display: grid; grid-template-columns: 1fr; gap: 0;
+    padding: 0 16px 16px;
+  }
+
+  .chart-panel {
+    background: #161b22; border: 1px solid #30363d; border-radius: 8px;
+    margin-top: 12px; overflow: hidden;
+  }
+  .chart-panel .panel-title {
+    padding: 8px 14px; font-size: 13px; font-weight: 600;
+    border-bottom: 1px solid #30363d; color: #8b949e; text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .stats-bar {
+    display: flex; gap: 12px; padding: 12px 24px; flex-wrap: wrap;
+  }
+  .stat-card {
+    background: #161b22; border: 1px solid #30363d; border-radius: 8px;
+    padding: 12px 18px; min-width: 150px; flex: 1;
+  }
+  .stat-card .stat-label { font-size: 11px; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px; }
+  .stat-card .stat-value { font-size: 22px; font-weight: 700; margin-top: 4px; }
+  .stat-card .stat-value.positive { color: #3fb950; }
+  .stat-card .stat-value.negative { color: #f85149; }
+  .stat-card .stat-value.neutral { color: #58a6ff; }
+
+  .bottom-row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    padding: 0 16px 16px;
+  }
+
+  .trade-filters {
+    display: flex; gap: 8px; align-items: center;
+  }
+  .trade-filters .btn { font-size: 12px; padding: 4px 10px; }
+
+  .log-panel {
+    background: #161b22; border: 1px solid #30363d; border-radius: 8px;
+    margin: 0 16px 16px; max-height: 250px; overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  .log-panel .panel-title {
+    padding: 8px 14px; font-size: 13px; font-weight: 600;
+    border-bottom: 1px solid #30363d; color: #8b949e; text-transform: uppercase;
+    letter-spacing: 0.5px; flex-shrink: 0;
+  }
+  .log-content {
+    overflow-y: auto; padding: 8px 14px; font-family: 'Consolas', monospace;
+    font-size: 12px; flex: 1;
+  }
+  .log-entry { padding: 2px 0; border-bottom: 1px solid #21262d; }
+  .log-entry .log-ts { color: #58a6ff; margin-right: 8px; }
+  .log-entry .log-warn { color: #d29922; }
+
+  @media (max-width: 900px) {
+    .bottom-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- File Loader -->
+<div id="loader">
+  <div class="header"><h1>Team East Dashboard</h1></div>
+  <div class="drop-zone" id="dropZone">
+    <h2>Drop .log file here</h2>
+    <p>or click to browse — accepts backtester output logs</p>
+    <input type="file" id="fileInput" accept=".log" style="display:none">
+  </div>
+</div>
+
+<!-- Dashboard -->
+<div class="dashboard" id="dashboard">
+  <div class="header">
+    <h1>Team East Dashboard</h1>
+  </div>
+
+  <div class="controls" id="controlsBar">
+    <label>Product:</label>
+    <select id="productSelect"></select>
+
+    <label style="margin-left:12px">Show Trades:</label>
+    <div class="trade-filters">
+      <button class="btn active" data-filter="buy" onclick="toggleFilter(this)">Buys</button>
+      <button class="btn active" data-filter="sell" onclick="toggleFilter(this)">Sells</button>
+    </div>
+
+    <label style="margin-left:12px">Normalize:</label>
+    <select id="normalizeSelect">
+      <option value="none">None</option>
+      <option value="mid">Relative to Mid Price</option>
+    </select>
+
+    <button class="btn" onclick="loadNewFile()" style="margin-left:auto">Load New File</button>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-bar" id="statsBar"></div>
+
+  <!-- Main Order Book Chart -->
+  <div class="charts-grid">
+    <div class="chart-panel">
+      <div class="panel-title">Order Book & Trades</div>
+      <div id="orderBookChart" style="height:400px"></div>
+    </div>
+  </div>
+
+  <!-- PnL and Position -->
+  <div class="bottom-row">
+    <div class="chart-panel">
+      <div class="panel-title">Profit & Loss</div>
+      <div id="pnlChart" style="height:250px"></div>
+    </div>
+    <div class="chart-panel">
+      <div class="panel-title">Position</div>
+      <div id="positionChart" style="height:250px"></div>
+    </div>
+  </div>
+
+  <!-- Sandbox Logs -->
+  <div class="log-panel">
+    <div class="panel-title">Sandbox Logs</div>
+    <div class="log-content" id="logContent"></div>
+  </div>
+</div>
+
+<script>
+// ── Globals ──
+let parsedData = null;
+let filters = { buy: true, sell: true };
+
+// ── Dark Plotly layout base ──
+const darkLayout = {
+  paper_bgcolor: '#161b22',
+  plot_bgcolor: '#0d1117',
+  font: { color: '#8b949e', size: 11 },
+  margin: { l: 55, r: 20, t: 10, b: 40 },
+  xaxis: { gridcolor: '#21262d', zeroline: false },
+  yaxis: { gridcolor: '#21262d', zeroline: false },
+  legend: { bgcolor: 'rgba(0,0,0,0)', font: { size: 11 } },
+  hovermode: 'x unified',
+};
+const plotConfig = { responsive: true, displayModeBar: false };
+
+// ── File Loading ──
+const dropZone = document.getElementById('dropZone');
+const fileInput = document.getElementById('fileInput');
+
+dropZone.addEventListener('click', () => fileInput.click());
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('dragover'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+dropZone.addEventListener('drop', e => {
+  e.preventDefault(); dropZone.classList.remove('dragover');
+  if (e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]);
+});
+fileInput.addEventListener('change', e => { if (e.target.files.length) handleFile(e.target.files[0]); });
+
+function loadNewFile() {
+  document.getElementById('dashboard').style.display = 'none';
+  document.getElementById('loader').style.display = '';
+  fileInput.value = '';
+}
+
+function handleFile(file) {
+  dropZone.querySelector('h2').textContent = 'Loading...';
+  dropZone.querySelector('p').textContent = file.name;
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      parsedData = parseLog(e.target.result);
+      if (parsedData.activities.length === 0) {
+        dropZone.querySelector('h2').textContent = 'No activity data found';
+        dropZone.querySelector('p').textContent = 'Check that the file is a valid backtester .log file';
+        return;
+      }
+      initDashboard();
+    } catch (err) {
+      console.error('Error:', err);
+      alert('Error: ' + err.message);
+    }
+  };
+  reader.readAsText(file);
+}
+
+// ── Log Parser ──
+function parseLog(text) {
+  const data = { activities: [], trades: [], sandboxLogs: [], products: new Set() };
+
+  text = text.replace(/\r\n/g, '\n');
+
+  const activityStart = text.indexOf('Activities log:\n');
+  const tradeStart = text.indexOf('Trade History:\n');
+
+  // ── Parse sandbox logs ──
+  if (activityStart !== -1) {
+    const sandboxText = text.substring(text.indexOf('\n') + 1, activityStart);
+    let i = 0;
+    while (i < sandboxText.length) {
+      const start = sandboxText.indexOf('{', i);
+      if (start === -1) break;
+      let depth = 0, j = start, inStr = false, esc = false;
+      for (; j < sandboxText.length; j++) {
+        const c = sandboxText[j];
+        if (esc) { esc = false; continue; }
+        if (c === '\\') { esc = true; continue; }
+        if (c === '"') { inStr = !inStr; continue; }
+        if (inStr) continue;
+        if (c === '{') depth++;
+        else if (c === '}') { depth--; if (depth === 0) { j++; break; } }
+      }
+      try {
+        const obj = JSON.parse(sandboxText.substring(start, j));
+        if (obj.sandboxLog && obj.sandboxLog.trim()) {
+          data.sandboxLogs.push({ timestamp: obj.timestamp, message: obj.sandboxLog.trim() });
+        }
+        if (obj.lambdaLog && obj.lambdaLog.trim()) {
+          data.sandboxLogs.push({ timestamp: obj.timestamp, message: obj.lambdaLog.trim(), type: 'lambda' });
+        }
+      } catch (e) {}
+      i = j;
+    }
+  }
+
+  // ── Parse activity logs ──
+  if (activityStart !== -1) {
+    const actEnd = tradeStart !== -1 ? tradeStart : text.length;
+    const actText = text.substring(activityStart, actEnd);
+    const lines = actText.split('\n');
+    for (const line of lines) {
+      if (!line || line.startsWith('Activities') || line.startsWith('day;')) continue;
+      const parts = line.split(';');
+      if (parts.length < 16) continue;
+      const row = {
+        day: parseInt(parts[0]),
+        timestamp: parseInt(parts[1]),
+        product: parts[2],
+        bid_prices: [parts[3] ? parseFloat(parts[3]) : null, parts[5] ? parseFloat(parts[5]) : null, parts[7] ? parseFloat(parts[7]) : null],
+        bid_volumes: [parseInt(parts[4]) || 0, parseInt(parts[6]) || 0, parseInt(parts[8]) || 0],
+        ask_prices: [parts[9] ? parseFloat(parts[9]) : null, parts[11] ? parseFloat(parts[11]) : null, parts[13] ? parseFloat(parts[13]) : null],
+        ask_volumes: [parseInt(parts[10]) || 0, parseInt(parts[12]) || 0, parseInt(parts[14]) || 0],
+        mid_price: parseFloat(parts[15]) || 0,
+        pnl: parseFloat(parts[16]) || 0,
+      };
+      data.products.add(row.product);
+      data.activities.push(row);
+    }
+  }
+
+  // ── Parse trade history ──
+  if (tradeStart !== -1) {
+    const tradeText = text.substring(tradeStart + 'Trade History:'.length).trim();
+    const fixed = tradeText.replace(/,(\s*[}\]])/g, '$1');
+    try {
+      const trades = JSON.parse(fixed);
+      for (const t of trades) {
+        t.side = t.buyer === 'SUBMISSION' ? 'buy' : 'sell';
+        data.trades.push(t);
+      }
+    } catch (e) {
+      console.warn('Trade parse error:', e);
+    }
+  }
+
+  data.products = [...data.products].sort();
+  return data;
+}
+
+// ── Dashboard Init ──
+function initDashboard() {
+  document.getElementById('loader').style.display = 'none';
+  document.getElementById('dashboard').style.display = 'block';
+
+  const select = document.getElementById('productSelect');
+  select.innerHTML = '';
+  for (const p of parsedData.products) {
+    const opt = document.createElement('option');
+    opt.value = p; opt.textContent = p;
+    select.appendChild(opt);
+  }
+  select.addEventListener('change', renderAll);
+  document.getElementById('normalizeSelect').addEventListener('change', renderAll);
+
+  renderAll();
+}
+
+// ── Render All ──
+function renderAll() {
+  const product = document.getElementById('productSelect').value;
+  const normalize = document.getElementById('normalizeSelect').value;
+  const rows = parsedData.activities.filter(r => r.product === product);
+  const trades = parsedData.trades.filter(t => t.symbol === product);
+
+  renderStats(rows, trades);
+  renderOrderBook(rows, trades, normalize);
+  renderPnL(rows);
+  renderPosition(trades);
+  window.dispatchEvent(new Event('resize'));
+  renderLogs();
+}
+
+// ── Stats Bar ──
+function renderStats(rows, trades) {
+  const bar = document.getElementById('statsBar');
+  if (!rows.length) { bar.innerHTML = ''; return; }
+
+  const finalPnL = rows[rows.length - 1].pnl;
+  const midPrices = rows.map(r => r.mid_price).filter(v => v);
+  const avgMid = midPrices.reduce((a, b) => a + b, 0) / midPrices.length;
+  const totalTrades = trades.length;
+  const buys = trades.filter(t => t.side === 'buy').length;
+  const sells = trades.filter(t => t.side === 'sell').length;
+  const timestamps = new Set(rows.map(r => r.timestamp));
+
+  bar.innerHTML = `
+    <div class="stat-card">
+      <div class="stat-label">Final PnL</div>
+      <div class="stat-value ${finalPnL >= 0 ? 'positive' : 'negative'}">${finalPnL.toLocaleString(undefined, {maximumFractionDigits: 0})}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Avg Mid Price</div>
+      <div class="stat-value neutral">${avgMid.toLocaleString(undefined, {maximumFractionDigits: 1})}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Total Trades</div>
+      <div class="stat-value neutral">${totalTrades}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Buys / Sells</div>
+      <div class="stat-value neutral">${buys} / ${sells}</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Timestamps</div>
+      <div class="stat-value neutral">${timestamps.size}</div>
+    </div>
+  `;
+}
+
+// ── Order Book Chart ──
+function renderOrderBook(rows, trades, normalize) {
+  const ts = rows.map(r => r.timestamp);
+  const offset = normalize === 'mid' ? rows.map(r => r.mid_price) : rows.map(() => 0);
+
+  const traces = [];
+
+  for (let i = 0; i < 3; i++) {
+    const prices = rows.map((r, j) => r.bid_prices[i] !== null ? r.bid_prices[i] - offset[j] : null);
+    const vols = rows.map(r => r.bid_volumes[i]);
+    if (!prices.some(p => p !== null)) continue;
+    traces.push({
+      x: ts, y: prices, mode: 'markers', name: `Bid L${i+1}`,
+      marker: { color: 'rgba(56,132,244,0.5)', size: vols.map(v => Math.max(3, Math.min(12, v / 3))), symbol: 'circle' },
+      hovertemplate: `Bid L${i+1}: %{y:.0f}<br>Vol: %{text}<extra></extra>`,
+      text: vols.map(String),
+    });
+  }
+
+  for (let i = 0; i < 3; i++) {
+    const prices = rows.map((r, j) => r.ask_prices[i] !== null ? r.ask_prices[i] - offset[j] : null);
+    const vols = rows.map(r => r.ask_volumes[i]);
+    if (!prices.some(p => p !== null)) continue;
+    traces.push({
+      x: ts, y: prices, mode: 'markers', name: `Ask L${i+1}`,
+      marker: { color: 'rgba(248,81,73,0.5)', size: vols.map(v => Math.max(3, Math.min(12, v / 3))), symbol: 'circle' },
+      hovertemplate: `Ask L${i+1}: %{y:.0f}<br>Vol: %{text}<extra></extra>`,
+      text: vols.map(String),
+    });
+  }
+
+  const midPrices = rows.map((r, j) => r.mid_price - offset[j]);
+  traces.push({
+    x: ts, y: midPrices, mode: 'lines', name: 'Mid Price',
+    line: { color: '#d2a8ff', width: 1.5, dash: 'dot' },
+    hovertemplate: 'Mid: %{y:.1f}<extra></extra>',
+  });
+
+  const midMap = {};
+  rows.forEach((r, j) => { midMap[r.timestamp] = offset[j]; });
+
+  if (filters.buy) {
+    const buyTrades = trades.filter(t => t.side === 'buy');
+    if (buyTrades.length) {
+      traces.push({
+        x: buyTrades.map(t => t.timestamp),
+        y: buyTrades.map(t => t.price - (midMap[t.timestamp] || 0)),
+        mode: 'markers', name: 'Buy Trade',
+        marker: { color: '#3fb950', size: buyTrades.map(t => Math.max(6, Math.min(16, t.quantity / 2))), symbol: 'triangle-up', line: { width: 1, color: '#fff' } },
+        hovertemplate: 'BUY %{text}<extra></extra>',
+        text: buyTrades.map(t => `${t.quantity} @ ${t.price}`),
+      });
+    }
+  }
+
+  if (filters.sell) {
+    const sellTrades = trades.filter(t => t.side === 'sell');
+    if (sellTrades.length) {
+      traces.push({
+        x: sellTrades.map(t => t.timestamp),
+        y: sellTrades.map(t => t.price - (midMap[t.timestamp] || 0)),
+        mode: 'markers', name: 'Sell Trade',
+        marker: { color: '#f85149', size: sellTrades.map(t => Math.max(6, Math.min(16, t.quantity / 2))), symbol: 'triangle-down', line: { width: 1, color: '#fff' } },
+        hovertemplate: 'SELL %{text}<extra></extra>',
+        text: sellTrades.map(t => `${t.quantity} @ ${t.price}`),
+      });
+    }
+  }
+
+  const layout = {
+    ...darkLayout,
+    xaxis: { ...darkLayout.xaxis, title: 'Timestamp' },
+    yaxis: { ...darkLayout.yaxis, title: normalize === 'mid' ? 'Price (relative to mid)' : 'Price' },
+    legend: { ...darkLayout.legend, orientation: 'h', y: 1.12 },
+  };
+
+  Plotly.react('orderBookChart', traces, layout, plotConfig);
+}
+
+// ── PnL Chart ──
+function renderPnL(rows) {
+  const ts = rows.map(r => r.timestamp);
+  const pnl = rows.map(r => r.pnl);
+
+  const lineColor = pnl[pnl.length - 1] >= 0 ? '#3fb950' : '#f85149';
+
+  const traces = [{
+    x: ts, y: pnl, mode: 'lines', name: 'PnL',
+    line: { color: lineColor, width: 2 },
+    fill: 'tozeroy', fillcolor: pnl[pnl.length - 1] >= 0 ? 'rgba(63,185,80,0.1)' : 'rgba(248,81,73,0.1)',
+    hovertemplate: 'PnL: %{y:,.0f}<extra></extra>',
+  }];
+
+  const layout = {
+    ...darkLayout,
+    xaxis: { ...darkLayout.xaxis, title: 'Timestamp' },
+    yaxis: { ...darkLayout.yaxis, title: 'PnL' },
+    showlegend: false,
+  };
+
+  Plotly.react('pnlChart', traces, layout, plotConfig);
+}
+
+// ── Position Chart ──
+function renderPosition(trades) {
+  const sorted = [...trades].sort((a, b) => a.timestamp - b.timestamp);
+  const timestamps = [];
+  const positions = [];
+  let pos = 0;
+
+  for (const t of sorted) {
+    pos += t.side === 'buy' ? t.quantity : -t.quantity;
+    timestamps.push(t.timestamp);
+    positions.push(pos);
+  }
+
+  const lineColor = '#58a6ff';
+  const traces = [{
+    x: timestamps, y: positions, mode: 'lines+markers', name: 'Position',
+    line: { color: lineColor, width: 2 },
+    marker: { color: lineColor, size: 3 },
+    fill: 'tozeroy', fillcolor: 'rgba(88,166,255,0.08)',
+    hovertemplate: 'Position: %{y}<extra></extra>',
+  }];
+
+  const layout = {
+    ...darkLayout,
+    xaxis: { ...darkLayout.xaxis, title: 'Timestamp' },
+    yaxis: { ...darkLayout.yaxis, title: 'Net Position' },
+    showlegend: false,
+  };
+
+  Plotly.react('positionChart', traces, layout, plotConfig);
+}
+
+// ── Sandbox Logs ──
+function renderLogs() {
+  const container = document.getElementById('logContent');
+  if (!parsedData.sandboxLogs.length) {
+    container.innerHTML = '<div style="color:#8b949e;padding:12px">No sandbox logs.</div>';
+    return;
+  }
+  container.innerHTML = parsedData.sandboxLogs.map(log => `
+    <div class="log-entry">
+      <span class="log-ts">t=${log.timestamp}</span>
+      <span class="log-warn">${log.message.replace(/\n/g, '<br>')}</span>
+    </div>
+  `).join('');
+}
+
+// ── Trade Filter Toggle ──
+function toggleFilter(btn) {
+  const key = btn.dataset.filter;
+  filters[key] = !filters[key];
+  btn.classList.toggle('active');
+  renderAll();
+}
+</script>
+</body>
+</html>
