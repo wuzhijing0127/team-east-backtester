@@ -1,0 +1,26 @@
+{
+  "file_path": "/Users/jim/Desktop/team-east-backtester/teameastbt/resources/round1/variants/v4e_stacked.py",
+  "file_hash": "f5fd643fa5f3aeb5edd1ac9663a40f270da84cc35020e3af02f1b3da18c8bb93",
+  "filename": "v4e_stacked.py",
+  "status_code": 201,
+  "response_body": {
+    "success": true,
+    "status": 201,
+    "data": {
+      "id": 178888,
+      "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+      "roundId": 2,
+      "submittedAt": "2026-04-16T04:02:25.489Z",
+      "submittedBy": {
+        "firstName": "Albert",
+        "lastName": "Ye"
+      },
+      "status": "SIMULATING",
+      "filename": "50-v4e_stacked.py",
+      "active": false,
+      "simulationApplicationAlgoSubmissionIdentifier": "25ea8d02-4543-4e22-81fa-94fbfc376809"
+    }
+  },
+  "timestamp": "2026-04-16T04:02:25.315541+00:00",
+  "submission_id": "178888"
+}

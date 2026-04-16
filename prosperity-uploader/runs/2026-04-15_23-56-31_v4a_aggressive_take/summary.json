@@ -1,0 +1,23 @@
+{
+  "strategy_name": "v4a_aggressive_take",
+  "submission_id": "178762",
+  "filename": "47-v4a_aggressive_take.py",
+  "submitted_at": "2026-04-16T03:56:32.246000+00:00",
+  "artifact_path": "runs/2026-04-15_23-56-31_v4a_aggressive_take/artifact.json",
+  "run_dir": "runs/2026-04-15_23-56-31_v4a_aggressive_take",
+  "final_pnl": 4124.78125,
+  "max_pnl": 4124.78125,
+  "min_pnl": 0.0,
+  "max_drawdown": 28.9765625,
+  "max_drawdown_pct": 0.14837712519319937,
+  "first_positive_ts": 3500.0,
+  "pnl_slope": 0.04436783266734629,
+  "pnl_volatility": 8.777872105965384,
+  "num_points": 500,
+  "time_horizon": 99800.0,
+  "peak_to_final_drop": 0.0,
+  "recovery_after_drawdown": 3165.859375,
+  "trade_count": null,
+  "products": [],
+  "raw_fields_found": []
+}

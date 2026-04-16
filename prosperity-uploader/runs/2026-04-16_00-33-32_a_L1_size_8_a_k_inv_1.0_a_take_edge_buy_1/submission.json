@@ -1,0 +1,21 @@
+{
+  "submission_id": "179696",
+  "status": "FINISHED",
+  "filename": "60-a_L1_size_8_a_k_inv_1.0_a_take_edge_buy_1.py",
+  "timestamp": "2026-04-16T04:33:32.185000+00:00",
+  "submitted_at": "2026-04-16T04:33:32.185000+00:00",
+  "raw": {
+    "id": 179696,
+    "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+    "roundId": 2,
+    "submittedAt": "2026-04-16T04:33:32.185Z",
+    "submittedBy": {
+      "firstName": "Albert",
+      "lastName": "Ye"
+    },
+    "status": "FINISHED",
+    "filename": "60-a_L1_size_8_a_k_inv_1.0_a_take_edge_buy_1.py",
+    "active": true,
+    "simulationApplicationAlgoSubmissionIdentifier": "c0564cbb-de76-45f0-be44-2aedf4963a99"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "file_path": "/Users/jim/Desktop/team-east-backtester/teameastbt/resources/round1/variants/v4d_pepper_max.py",
+  "file_hash": "f90261ff04d2c9a909e04a03b68bf6ae89ee403f883c7813df84f6e31308adb4",
+  "filename": "v4d_pepper_max.py",
+  "status_code": 201,
+  "response_body": {
+    "success": true,
+    "status": 201,
+    "data": {
+      "id": 178852,
+      "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+      "roundId": 2,
+      "submittedAt": "2026-04-16T04:00:35.925Z",
+      "submittedBy": {
+        "firstName": "Albert",
+        "lastName": "Ye"
+      },
+      "status": "SIMULATING",
+      "filename": "49-v4d_pepper_max.py",
+      "active": false,
+      "simulationApplicationAlgoSubmissionIdentifier": "0543a10a-cbae-4351-9727-adbee00dc1c5"
+    }
+  },
+  "timestamp": "2026-04-16T04:00:35.773584+00:00",
+  "submission_id": "178852"
+}

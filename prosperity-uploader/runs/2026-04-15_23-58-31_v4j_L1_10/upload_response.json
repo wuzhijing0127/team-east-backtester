@@ -1,0 +1,26 @@
+{
+  "file_path": "/Users/jim/Desktop/team-east-backtester/teameastbt/resources/round1/variants/v4j_L1_10.py",
+  "file_hash": "02d5c781581bcece8d33cdb8028e13610d8af77313809bbc04e649810cee9956",
+  "filename": "v4j_L1_10.py",
+  "status_code": 201,
+  "response_body": {
+    "success": true,
+    "status": 201,
+    "data": {
+      "id": 178807,
+      "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+      "roundId": 2,
+      "submittedAt": "2026-04-16T03:58:31.770Z",
+      "submittedBy": {
+        "firstName": "Albert",
+        "lastName": "Ye"
+      },
+      "status": "SIMULATING",
+      "filename": "48-v4j_L1_10.py",
+      "active": false,
+      "simulationApplicationAlgoSubmissionIdentifier": "0143cfe1-c893-4338-a276-5890f3a7b154"
+    }
+  },
+  "timestamp": "2026-04-16T03:58:31.374230+00:00",
+  "submission_id": "178807"
+}

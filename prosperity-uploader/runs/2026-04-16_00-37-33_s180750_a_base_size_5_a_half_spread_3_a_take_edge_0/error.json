@@ -1,0 +1,4 @@
+{
+  "error": "Upload failed with HTTP 400: {'success': False, 'status': 400, 'message': 'External API error'}",
+  "timestamp": "2026-04-16T00:43:42.038089"
+}

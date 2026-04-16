@@ -1,0 +1,23 @@
+{
+  "strategy_name": "v4j_L1_10",
+  "submission_id": "178807",
+  "filename": "48-v4j_L1_10.py",
+  "submitted_at": "2026-04-16T03:58:31.770000+00:00",
+  "artifact_path": "runs/2026-04-15_23-58-31_v4j_L1_10/artifact.json",
+  "run_dir": "runs/2026-04-15_23-58-31_v4j_L1_10",
+  "final_pnl": 6410.625,
+  "max_pnl": 6410.625,
+  "min_pnl": 0.0,
+  "max_drawdown": 41.15625,
+  "max_drawdown_pct": 0.1282146160962072,
+  "first_positive_ts": 1100.0,
+  "pnl_slope": 0.06856660956971952,
+  "pnl_volatility": 17.53787534683252,
+  "num_points": 500,
+  "time_horizon": 99800.0,
+  "peak_to_final_drop": 0.0,
+  "recovery_after_drawdown": 1568.71875,
+  "trade_count": null,
+  "products": [],
+  "raw_fields_found": []
+}

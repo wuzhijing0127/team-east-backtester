@@ -1,0 +1,21 @@
+{
+  "submission_id": "180773",
+  "status": "FINISHED",
+  "filename": "72-s182338_a_base_size_5_a_half_spread_3_a_take_edge_4.py",
+  "timestamp": "2026-04-16T05:13:34.737000+00:00",
+  "submitted_at": "2026-04-16T05:13:34.737000+00:00",
+  "raw": {
+    "id": 180773,
+    "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+    "roundId": 2,
+    "submittedAt": "2026-04-16T05:13:34.737Z",
+    "submittedBy": {
+      "firstName": "Albert",
+      "lastName": "Ye"
+    },
+    "status": "FINISHED",
+    "filename": "72-s182338_a_base_size_5_a_half_spread_3_a_take_edge_4.py",
+    "active": true,
+    "simulationApplicationAlgoSubmissionIdentifier": "de24e797-b94c-47cb-943e-dfcb6c9e6823"
+  }
+}

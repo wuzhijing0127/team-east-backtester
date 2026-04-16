@@ -1,0 +1,23 @@
+{
+  "strategy_name": "s182338_a_base_size_8_a_half_spread_4_a_take_edge_4",
+  "submission_id": "181861",
+  "filename": "92-s182338_a_base_size_8_a_half_spread_4_a_take_edge_4.py",
+  "submitted_at": "2026-04-16T05:56:39.824000+00:00",
+  "artifact_path": "runs/2026-04-16_01-56-39_s182338_a_base_size_8_a_half_spread_4_a_take_edge_4/artifact.json",
+  "run_dir": "runs/2026-04-16_01-56-39_s182338_a_base_size_8_a_half_spread_4_a_take_edge_4",
+  "final_pnl": 9812.28125,
+  "max_pnl": 9812.28125,
+  "min_pnl": -682.0,
+  "max_drawdown": 439.09375,
+  "max_drawdown_pct": 0.007946251500883666,
+  "first_positive_ts": 6900.0,
+  "pnl_slope": 0.10578594864691959,
+  "pnl_volatility": 25.955079552132084,
+  "num_points": 500,
+  "time_horizon": 99800.0,
+  "peak_to_final_drop": 0.0,
+  "recovery_after_drawdown": 10494.28125,
+  "trade_count": null,
+  "products": [],
+  "raw_fields_found": []
+}

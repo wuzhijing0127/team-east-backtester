@@ -1,0 +1,26 @@
+{
+  "file_path": "/Users/jim/Desktop/team-east-backtester/prosperity-uploader/generated/a_L1_size_8_a_k_inv_1.0_a_take_edge_sell_2.py",
+  "file_hash": "80a8fd1c692fc495e34a4aa1cd84ac8bd6d9bc983644a4462b38582029efffd6",
+  "filename": "a_L1_size_8_a_k_inv_1.0_a_take_edge_sell_2.py",
+  "status_code": 201,
+  "response_body": {
+    "success": true,
+    "status": 201,
+    "data": {
+      "id": 179797,
+      "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+      "roundId": 2,
+      "submittedAt": "2026-04-16T04:37:31.062Z",
+      "submittedBy": {
+        "firstName": "Albert",
+        "lastName": "Ye"
+      },
+      "status": "SIMULATING",
+      "filename": "62-a_L1_size_8_a_k_inv_1.0_a_take_edge_sell_2.py",
+      "active": false,
+      "simulationApplicationAlgoSubmissionIdentifier": "3ef3205c-3e32-433b-83fd-847e2f7ffb47"
+    }
+  },
+  "timestamp": "2026-04-16T04:37:30.931653+00:00",
+  "submission_id": "179797"
+}

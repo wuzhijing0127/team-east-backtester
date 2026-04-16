@@ -1,0 +1,21 @@
+{
+  "submission_id": "178888",
+  "status": "FINISHED",
+  "filename": "50-v4e_stacked.py",
+  "timestamp": "2026-04-16T04:02:25.489000+00:00",
+  "submitted_at": "2026-04-16T04:02:25.489000+00:00",
+  "raw": {
+    "id": 178888,
+    "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+    "roundId": 2,
+    "submittedAt": "2026-04-16T04:02:25.489Z",
+    "submittedBy": {
+      "firstName": "Albert",
+      "lastName": "Ye"
+    },
+    "status": "FINISHED",
+    "filename": "50-v4e_stacked.py",
+    "active": true,
+    "simulationApplicationAlgoSubmissionIdentifier": "25ea8d02-4543-4e22-81fa-94fbfc376809"
+  }
+}

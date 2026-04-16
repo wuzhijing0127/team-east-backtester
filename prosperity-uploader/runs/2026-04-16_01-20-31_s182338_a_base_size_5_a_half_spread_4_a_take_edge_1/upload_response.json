@@ -1,0 +1,26 @@
+{
+  "file_path": "/Users/jim/Desktop/team-east-backtester/prosperity-uploader/generated/s182338_a_base_size_5_a_half_spread_4_a_take_edge_1.py",
+  "file_hash": "6134967a97969547d27af44e9309767dca42d4c0757ab03fbf37ecb7914af62a",
+  "filename": "s182338_a_base_size_5_a_half_spread_4_a_take_edge_1.py",
+  "status_code": 201,
+  "response_body": {
+    "success": true,
+    "status": 201,
+    "data": {
+      "id": 180959,
+      "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+      "roundId": 2,
+      "submittedAt": "2026-04-16T05:20:31.221Z",
+      "submittedBy": {
+        "firstName": "Albert",
+        "lastName": "Ye"
+      },
+      "status": "SIMULATING",
+      "filename": "75-s182338_a_base_size_5_a_half_spread_4_a_take_edge_1.py",
+      "active": false,
+      "simulationApplicationAlgoSubmissionIdentifier": "6ed110ef-5d5c-4473-97aa-563a064f8ef1"
+    }
+  },
+  "timestamp": "2026-04-16T05:20:31.087328+00:00",
+  "submission_id": "180959"
+}

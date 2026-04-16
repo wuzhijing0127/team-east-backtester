@@ -1,0 +1,23 @@
+{
+  "strategy_name": "a_L1_size_8_a_k_inv_1.0_a_take_edge_buy_1",
+  "submission_id": "179696",
+  "filename": "60-a_L1_size_8_a_k_inv_1.0_a_take_edge_buy_1.py",
+  "submitted_at": "2026-04-16T04:33:32.185000+00:00",
+  "artifact_path": "runs/2026-04-16_00-33-32_a_L1_size_8_a_k_inv_1.0_a_take_edge_buy_1/artifact.json",
+  "run_dir": "runs/2026-04-16_00-33-32_a_L1_size_8_a_k_inv_1.0_a_take_edge_buy_1",
+  "final_pnl": 6322.375,
+  "max_pnl": 6322.375,
+  "min_pnl": 0.0,
+  "max_drawdown": 52.84375,
+  "max_drawdown_pct": 0.1282146160962072,
+  "first_positive_ts": 1100.0,
+  "pnl_slope": 0.06743269864181019,
+  "pnl_volatility": 16.180913608462497,
+  "num_points": 500,
+  "time_horizon": 99800.0,
+  "peak_to_final_drop": 0.0,
+  "recovery_after_drawdown": 1564.9375,
+  "trade_count": null,
+  "products": [],
+  "raw_fields_found": []
+}

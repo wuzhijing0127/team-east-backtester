@@ -1,0 +1,23 @@
+{
+  "strategy_name": "v4e_stacked",
+  "submission_id": "178888",
+  "filename": "50-v4e_stacked.py",
+  "submitted_at": "2026-04-16T04:02:25.489000+00:00",
+  "artifact_path": "runs/2026-04-16_00-02-25_v4e_stacked/artifact.json",
+  "run_dir": "runs/2026-04-16_00-02-25_v4e_stacked",
+  "final_pnl": 6289.78125,
+  "max_pnl": 6289.78125,
+  "min_pnl": 0.0,
+  "max_drawdown": 44.46875,
+  "max_drawdown_pct": 0.1282146160962072,
+  "first_positive_ts": 1100.0,
+  "pnl_slope": 0.06708158894135577,
+  "pnl_volatility": 16.559457823372046,
+  "num_points": 500,
+  "time_horizon": 99800.0,
+  "peak_to_final_drop": 0.0,
+  "recovery_after_drawdown": 1567.5625,
+  "trade_count": null,
+  "products": [],
+  "raw_fields_found": []
+}

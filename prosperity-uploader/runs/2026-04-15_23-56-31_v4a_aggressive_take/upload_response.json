@@ -1,0 +1,26 @@
+{
+  "file_path": "/Users/jim/Desktop/team-east-backtester/teameastbt/resources/round1/variants/v4a_aggressive_take.py",
+  "file_hash": "7a80f7214eba6386e01d5d0aa2c650f6f390a7ab7760d5a6deb3a016a434f2b2",
+  "filename": "v4a_aggressive_take.py",
+  "status_code": 201,
+  "response_body": {
+    "success": true,
+    "status": 201,
+    "data": {
+      "id": 178762,
+      "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+      "roundId": 2,
+      "submittedAt": "2026-04-16T03:56:32.246Z",
+      "submittedBy": {
+        "firstName": "Albert",
+        "lastName": "Ye"
+      },
+      "status": "SIMULATING",
+      "filename": "47-v4a_aggressive_take.py",
+      "active": false,
+      "simulationApplicationAlgoSubmissionIdentifier": "e58e50fa-f2dd-4f37-8d0f-f72e887d5623"
+    }
+  },
+  "timestamp": "2026-04-16T03:56:31.949645+00:00",
+  "submission_id": "178762"
+}
