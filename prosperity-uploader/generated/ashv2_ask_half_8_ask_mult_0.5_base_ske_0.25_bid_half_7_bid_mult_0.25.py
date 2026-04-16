@@ -1,5 +1,5 @@
 # Auto-generated ASH v2 — always-skewed, fully parameterized
-# Config: imbalance_beta=0.1, base_skew=0.25, bid_half_spread=7, ask_half_spread=8, take_buy_edge=4, take_sell_edge=1, take_buy_when_short_edge=2, take_sell_when_long_edge=2, quote_size_bid=22, quote_size_ask=12, tier_medium=0.3, tier_extreme=0.95, bid_mult_medium=0.25, ask_mult_high=0.5, flatten_trigger=0.8, flatten_size=18, flatten_aggression=1
+# Config: base_skew=0.25, inventory_skew_k=2.0, bid_half_spread=7, ask_half_spread=8, take_buy_edge=4, take_sell_edge=1, take_buy_when_short_edge=2, take_sell_when_long_edge=2, quote_size_bid=22, quote_size_ask=12, tier_medium=0.3, tier_extreme=0.95, bid_mult_medium=0.25, ask_mult_high=0.5, flatten_trigger=0.8, flatten_size=18, flatten_aggression=1
 
 import json
 from datamodel import Order, OrderDepth, TradingState
@@ -9,9 +9,9 @@ from typing import Dict, List, Tuple, Optional
 C = {
     "anchor_fair": 10000,
     "micro_beta": 0.0,
-    "imbalance_beta": 0.1,
+    "imbalance_beta": 0.0,
     "base_skew": 0.25,
-    "inventory_skew_k": 2.5,
+    "inventory_skew_k": 2.0,
     "signal_skew_k": 0.0,
     "bid_half_spread": 7,
     "ask_half_spread": 8,

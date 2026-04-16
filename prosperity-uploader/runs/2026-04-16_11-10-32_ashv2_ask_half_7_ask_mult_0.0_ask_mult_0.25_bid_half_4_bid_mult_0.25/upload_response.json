@@ -1,0 +1,26 @@
+{
+  "file_path": "/Users/jim/Desktop/team-east-backtester/prosperity-uploader/generated/ashv2_ask_half_7_ask_mult_0.0_ask_mult_0.25_bid_half_4_bid_mult_0.25.py",
+  "file_hash": "0d0ed1b02bf7dbfa7b0fe1f5f3fcde8697b5549fc7cad3f3042f16858a357162",
+  "filename": "ashv2_ask_half_7_ask_mult_0.0_ask_mult_0.25_bid_half_4_bid_mult_0.25.py",
+  "status_code": 201,
+  "response_body": {
+    "success": true,
+    "status": 201,
+    "data": {
+      "id": 200282,
+      "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+      "roundId": 2,
+      "submittedAt": "2026-04-16T15:10:32.152Z",
+      "submittedBy": {
+        "firstName": "Albert",
+        "lastName": "Ye"
+      },
+      "status": "SIMULATING",
+      "filename": "346-ashv2_ask_half_7_ask_mult_0.0_ask_mult_0.25_bid_half_4_bid_mult_0.25.py",
+      "active": false,
+      "simulationApplicationAlgoSubmissionIdentifier": "89d7da1c-0aba-4f00-a2ac-4658776c32b3"
+    }
+  },
+  "timestamp": "2026-04-16T15:10:32.001625+00:00",
+  "submission_id": "200282"
+}

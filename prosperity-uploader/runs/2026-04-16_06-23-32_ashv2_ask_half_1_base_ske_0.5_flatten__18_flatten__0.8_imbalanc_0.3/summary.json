@@ -1,0 +1,23 @@
+{
+  "strategy_name": "ashv2_ask_half_1_base_ske_0.5_flatten__18_flatten__0.8_imbalanc_0.3",
+  "submission_id": "189174",
+  "filename": "217-ashv2_ask_half_1_base_ske_0.5_flatten__18_flatten__0.8_imbalanc_0.3.py",
+  "submitted_at": "2026-04-16T10:23:32.364000+00:00",
+  "artifact_path": "runs/2026-04-16_06-23-32_ashv2_ask_half_1_base_ske_0.5_flatten__18_flatten__0.8_imbalanc_0.3/artifact.json",
+  "run_dir": "runs/2026-04-16_06-23-32_ashv2_ask_half_1_base_ske_0.5_flatten__18_flatten__0.8_imbalanc_0.3",
+  "final_pnl": 7834.5,
+  "max_pnl": 7834.5,
+  "min_pnl": -682.0,
+  "max_drawdown": 439.09375,
+  "max_drawdown_pct": 0.11437535653166,
+  "first_positive_ts": 8300.0,
+  "pnl_slope": 0.08628545024156659,
+  "pnl_volatility": 24.62164263902409,
+  "num_points": 500,
+  "time_horizon": 99800.0,
+  "peak_to_final_drop": 0.0,
+  "recovery_after_drawdown": 8516.5,
+  "trade_count": null,
+  "products": [],
+  "raw_fields_found": []
+}

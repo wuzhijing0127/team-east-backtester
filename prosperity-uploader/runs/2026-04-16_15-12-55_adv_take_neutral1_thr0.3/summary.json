@@ -1,0 +1,23 @@
+{
+  "strategy_name": "adv_take_neutral1_thr0.3",
+  "submission_id": "213512",
+  "filename": "434-adv_take_neutral1_thr0.3.py",
+  "submitted_at": "2026-04-16T19:12:55.984000+00:00",
+  "artifact_path": "runs/2026-04-16_15-12-55_adv_take_neutral1_thr0.3/artifact.json",
+  "run_dir": "runs/2026-04-16_15-12-55_adv_take_neutral1_thr0.3",
+  "final_pnl": 10427.625,
+  "max_pnl": 10427.625,
+  "min_pnl": -682.0,
+  "max_drawdown": 439.09375,
+  "max_drawdown_pct": 0.007025077042165068,
+  "first_positive_ts": 6700.0,
+  "pnl_slope": 0.11307719026305793,
+  "pnl_volatility": 28.256710695054352,
+  "num_points": 500,
+  "time_horizon": 99800.0,
+  "peak_to_final_drop": 0.0,
+  "recovery_after_drawdown": 11109.625,
+  "trade_count": null,
+  "products": [],
+  "raw_fields_found": []
+}

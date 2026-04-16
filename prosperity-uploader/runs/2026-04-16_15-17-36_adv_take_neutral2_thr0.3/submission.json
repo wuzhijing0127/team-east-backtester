@@ -1,0 +1,21 @@
+{
+  "submission_id": "213806",
+  "status": "FINISHED",
+  "filename": "436-adv_take_neutral2_thr0.3.py",
+  "timestamp": "2026-04-16T19:17:36.166000+00:00",
+  "submitted_at": "2026-04-16T19:17:36.166000+00:00",
+  "raw": {
+    "id": 213806,
+    "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+    "roundId": 2,
+    "submittedAt": "2026-04-16T19:17:36.166Z",
+    "submittedBy": {
+      "firstName": "Albert",
+      "lastName": "Ye"
+    },
+    "status": "FINISHED",
+    "filename": "436-adv_take_neutral2_thr0.3.py",
+    "active": true,
+    "simulationApplicationAlgoSubmissionIdentifier": "6d26d3e0-9191-41c6-895d-11e1847c6434"
+  }
+}

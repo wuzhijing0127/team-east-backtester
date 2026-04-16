@@ -1,0 +1,23 @@
+{
+  "strategy_name": "s3_bs20_hs2_te1",
+  "submission_id": "212005",
+  "filename": "428-s3_bs20_hs2_te1.py",
+  "submitted_at": "2026-04-16T18:47:32.134000+00:00",
+  "artifact_path": "runs/2026-04-16_14-47-31_s3_bs20_hs2_te1/artifact.json",
+  "run_dir": "runs/2026-04-16_14-47-31_s3_bs20_hs2_te1",
+  "final_pnl": 10281.90625,
+  "max_pnl": 10281.90625,
+  "min_pnl": -682.0,
+  "max_drawdown": 439.09375,
+  "max_drawdown_pct": 0.0069858974917578025,
+  "first_positive_ts": 6700.0,
+  "pnl_slope": 0.11215487522317277,
+  "pnl_volatility": 27.62092543194953,
+  "num_points": 500,
+  "time_horizon": 99800.0,
+  "peak_to_final_drop": 0.0,
+  "recovery_after_drawdown": 10963.90625,
+  "trade_count": null,
+  "products": [],
+  "raw_fields_found": []
+}

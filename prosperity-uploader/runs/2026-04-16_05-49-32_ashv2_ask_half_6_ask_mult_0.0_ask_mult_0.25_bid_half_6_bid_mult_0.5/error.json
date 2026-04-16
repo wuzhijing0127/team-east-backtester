@@ -1,0 +1,4 @@
+{
+  "error": "No artifact URL found in graph response for 188215. Response: {'success': False, 'status': 404, 'message': 'S3 object graph not found'}",
+  "timestamp": "2026-04-16T05:50:46.598303"
+}

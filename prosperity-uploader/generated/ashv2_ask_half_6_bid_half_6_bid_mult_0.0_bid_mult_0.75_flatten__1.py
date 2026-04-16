@@ -1,5 +1,5 @@
 # Auto-generated ASH v2 — always-skewed, fully parameterized
-# Config: micro_beta=0.2, imbalance_beta=0.4, inventory_skew_k=1.5, bid_half_spread=6, ask_half_spread=6, take_buy_edge=1, take_sell_edge=3, take_buy_when_short_edge=2, take_sell_when_long_edge=2, quote_size_bid=10, quote_size_ask=24, tier_medium=0.6, tier_extreme=0.95, bid_mult_medium=0.75, bid_mult_high=0.0, flatten_trigger=0.95, flatten_size=14, flatten_aggression=1
+# Config: micro_beta=0.2, imbalance_beta=0.5, inventory_skew_k=1.0, bid_half_spread=6, ask_half_spread=6, take_buy_edge=1, take_sell_edge=3, take_buy_when_short_edge=2, take_sell_when_long_edge=2, quote_size_bid=10, quote_size_ask=24, tier_medium=0.5, tier_high=0.8, tier_extreme=0.95, bid_mult_medium=0.75, bid_mult_high=0.0, flatten_trigger=0.95, flatten_size=14, flatten_aggression=1
 
 import json
 from datamodel import Order, OrderDepth, TradingState
@@ -9,9 +9,9 @@ from typing import Dict, List, Tuple, Optional
 C = {
     "anchor_fair": 10000,
     "micro_beta": 0.2,
-    "imbalance_beta": 0.4,
+    "imbalance_beta": 0.5,
     "base_skew": 0.0,
-    "inventory_skew_k": 1.5,
+    "inventory_skew_k": 1.0,
     "signal_skew_k": 0.0,
     "bid_half_spread": 6,
     "ask_half_spread": 6,
@@ -23,8 +23,8 @@ C = {
     "quote_size_bid": 10,
     "quote_size_ask": 24,
     "position_limit": 50,
-    "tier_medium": 0.6,
-    "tier_high": 0.7,
+    "tier_medium": 0.5,
+    "tier_high": 0.8,
     "tier_extreme": 0.95,
     "bid_mult_normal": 1.0,
     "ask_mult_normal": 1.0,

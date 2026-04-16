@@ -1,0 +1,23 @@
+{
+  "strategy_name": "s1_bs30",
+  "submission_id": "209953",
+  "filename": "417-s1_bs30.py",
+  "submitted_at": "2026-04-16T18:13:33.765000+00:00",
+  "artifact_path": "runs/2026-04-16_14-13-33_s1_bs30/artifact.json",
+  "run_dir": "runs/2026-04-16_14-13-33_s1_bs30",
+  "final_pnl": 10040.9375,
+  "max_pnl": 10040.9375,
+  "min_pnl": -682.0,
+  "max_drawdown": 439.09375,
+  "max_drawdown_pct": 0.011104363667910124,
+  "first_positive_ts": 6700.0,
+  "pnl_slope": 0.108644465781535,
+  "pnl_volatility": 28.15417595181462,
+  "num_points": 500,
+  "time_horizon": 99800.0,
+  "peak_to_final_drop": 0.0,
+  "recovery_after_drawdown": 10722.9375,
+  "trade_count": null,
+  "products": [],
+  "raw_fields_found": []
+}

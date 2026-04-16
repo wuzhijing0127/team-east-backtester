@@ -1,0 +1,26 @@
+{
+  "file_path": "/Users/jim/Desktop/team-east-backtester/prosperity-uploader/generated/adv_take_neutral2_thr0.5.py",
+  "file_hash": "94db501bb45daafe8a4af965f7da09d6abb1598974ec2e4863ff559696f38bc1",
+  "filename": "adv_take_neutral2_thr0.5.py",
+  "status_code": 201,
+  "response_body": {
+    "success": true,
+    "status": 201,
+    "data": {
+      "id": 213940,
+      "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+      "roundId": 2,
+      "submittedAt": "2026-04-16T19:19:40.692Z",
+      "submittedBy": {
+        "firstName": "Albert",
+        "lastName": "Ye"
+      },
+      "status": "SIMULATING",
+      "filename": "437-adv_take_neutral2_thr0.5.py",
+      "active": false,
+      "simulationApplicationAlgoSubmissionIdentifier": "517cd7fb-ea9d-4283-b0f5-7d53267a1cfd"
+    }
+  },
+  "timestamp": "2026-04-16T19:19:40.419875+00:00",
+  "submission_id": "213940"
+}

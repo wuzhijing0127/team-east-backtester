@@ -1,5 +1,5 @@
 # Auto-generated ASH v2 — always-skewed, fully parameterized
-# Config: micro_beta=0.3, imbalance_beta=0.4, base_skew=0.25, inventory_skew_k=2.0, bid_half_spread=4, ask_half_spread=4, join_improve_mode=0, take_buy_edge=1, take_sell_edge=3, take_buy_when_short_edge=2, take_sell_when_long_edge=1, quote_size_bid=18, quote_size_ask=6, tier_medium=0.6, tier_extreme=0.85, bid_mult_medium=1.0, ask_mult_medium=1.0, bid_mult_high=0.0, ask_mult_high=0.0, flatten_trigger=0.95, flatten_size=20, flatten_aggression=1
+# Config: micro_beta=0.1, imbalance_beta=0.2, base_skew=0.25, inventory_skew_k=2.0, bid_half_spread=4, ask_half_spread=4, join_improve_mode=0, take_sell_edge=1, take_buy_when_short_edge=2, take_sell_when_long_edge=1, quote_size_bid=20, quote_size_ask=20, tier_medium=0.3, bid_mult_medium=0.0, ask_mult_medium=1.0, ask_mult_high=0.0, flatten_trigger=0.95, flatten_aggression=1
 
 import json
 from datamodel import Order, OrderDepth, TradingState
@@ -8,35 +8,35 @@ from typing import Dict, List, Tuple, Optional
 # ── ASH Config ────────────────────────────────────────────────
 C = {
     "anchor_fair": 10000,
-    "micro_beta": 0.3,
-    "imbalance_beta": 0.4,
+    "micro_beta": 0.1,
+    "imbalance_beta": 0.2,
     "base_skew": 0.25,
     "inventory_skew_k": 2.0,
     "signal_skew_k": 0.0,
     "bid_half_spread": 4,
     "ask_half_spread": 4,
     "join_improve_mode": 0,
-    "take_buy_edge": 1,
-    "take_sell_edge": 3,
+    "take_buy_edge": 2,
+    "take_sell_edge": 1,
     "take_buy_when_short_edge": 2,
     "take_sell_when_long_edge": 1,
-    "quote_size_bid": 18,
-    "quote_size_ask": 6,
+    "quote_size_bid": 20,
+    "quote_size_ask": 20,
     "position_limit": 50,
-    "tier_medium": 0.6,
+    "tier_medium": 0.3,
     "tier_high": 0.7,
-    "tier_extreme": 0.85,
+    "tier_extreme": 0.9,
     "bid_mult_normal": 1.0,
     "ask_mult_normal": 1.0,
-    "bid_mult_medium": 1.0,
+    "bid_mult_medium": 0.0,
     "ask_mult_medium": 1.0,
-    "bid_mult_high": 0.0,
+    "bid_mult_high": 0.25,
     "ask_mult_high": 0.0,
     "bid_mult_extreme": 0.0,
     "ask_mult_extreme": 0.0,
     "flatten_enabled": True,
     "flatten_trigger": 0.95,
-    "flatten_size": 20,
+    "flatten_size": 10,
     "flatten_aggression": 1,
 }
 

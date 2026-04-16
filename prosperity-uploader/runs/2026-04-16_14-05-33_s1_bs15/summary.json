@@ -1,0 +1,23 @@
+{
+  "strategy_name": "s1_bs15",
+  "submission_id": "209462",
+  "filename": "413-s1_bs15.py",
+  "submitted_at": "2026-04-16T18:05:34.083000+00:00",
+  "artifact_path": "runs/2026-04-16_14-05-33_s1_bs15/artifact.json",
+  "run_dir": "runs/2026-04-16_14-05-33_s1_bs15",
+  "final_pnl": 10088.375,
+  "max_pnl": 10088.375,
+  "min_pnl": -682.0,
+  "max_drawdown": 439.09375,
+  "max_drawdown_pct": 0.011104363667910124,
+  "first_positive_ts": 6700.0,
+  "pnl_slope": 0.10929462203364439,
+  "pnl_volatility": 27.711524427815455,
+  "num_points": 500,
+  "time_horizon": 99800.0,
+  "peak_to_final_drop": 0.0,
+  "recovery_after_drawdown": 10770.375,
+  "trade_count": null,
+  "products": [],
+  "raw_fields_found": []
+}

@@ -1,0 +1,23 @@
+{
+  "strategy_name": "ashv2_ask_half_4_ask_mult_0.5_ask_mult_0.0_base_ske_-0.25_bid_half_6",
+  "submission_id": "189004",
+  "filename": "214-ashv2_ask_half_4_ask_mult_0.5_ask_mult_0.0_base_ske_-0.25_bid_half_6.py",
+  "submitted_at": "2026-04-16T10:17:32.455000+00:00",
+  "artifact_path": "runs/2026-04-16_06-17-32_ashv2_ask_half_4_ask_mult_0.5_ask_mult_0.0_base_ske_-0.25_bid_half_6/artifact.json",
+  "run_dir": "runs/2026-04-16_06-17-32_ashv2_ask_half_4_ask_mult_0.5_ask_mult_0.0_base_ske_-0.25_bid_half_6",
+  "final_pnl": 8984.375,
+  "max_pnl": 8984.375,
+  "min_pnl": -682.0,
+  "max_drawdown": 439.09375,
+  "max_drawdown_pct": 0.005744570953760471,
+  "first_positive_ts": 7700.0,
+  "pnl_slope": 0.0972657132685562,
+  "pnl_volatility": 23.754894681514116,
+  "num_points": 500,
+  "time_horizon": 99800.0,
+  "peak_to_final_drop": 0.0,
+  "recovery_after_drawdown": 9666.375,
+  "trade_count": null,
+  "products": [],
+  "raw_fields_found": []
+}

@@ -1,0 +1,711 @@
+{
+  "success": true,
+  "status": 200,
+  "data": {
+    "items": [
+      {
+        "id": 185490,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T08:15:34.876Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "SIMULATING",
+        "filename": "155-ashv2_ask_half_4_ask_mult_0.25_base_ske_0.5_bid_half_6_bid_mult_0.25.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "7ea1ffef-7b7c-4687-9f20-2031edd1a7c4"
+      },
+      {
+        "id": 185442,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T08:13:40.088Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "154-ashv2_ask_half_5_ask_mult_1.0_base_ske_0.25_bid_half_2_flatten__1.py",
+        "active": true,
+        "simulationApplicationAlgoSubmissionIdentifier": "04290b02-10df-4b9e-807d-88fd6b979d37"
+      },
+      {
+        "id": 185384,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T08:11:32.841Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "153-ashv2_ask_half_2_ask_mult_0.0_base_ske_0.25_bid_half_8_flatten__6.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "f2782e6d-5195-4d1f-ad63-2b58853282d5"
+      },
+      {
+        "id": 185334,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T08:09:37.870Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "152-ashv2_ask_half_5_ask_mult_0.0_bid_half_6_bid_mult_0.75_flatten__18.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "fef5b4b3-448f-4c42-83b1-fc7b0a18456a"
+      },
+      {
+        "id": 185280,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T08:07:32.457Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "151-ashv2_ask_half_4_ask_mult_0.0_ask_mult_0.0_base_ske_-0.25_bid_mult_0.0.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "c42814ee-a7ae-4384-a601-7efb88fe3e7c"
+      },
+      {
+        "id": 185234,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T08:05:37.275Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "150-ashv2_ask_mult_0.0_ask_mult_0.75_bid_mult_0.25_flatten__1_flatten__16.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "4058e0e8-e2b5-4c44-ad45-76ac0d79065b"
+      },
+      {
+        "id": 185183,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T08:03:31.798Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "149-ashv2_ask_mult_0.0_ask_mult_0.25_bid_half_5_flatten__0.85_imbalanc_0.4.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "a6178f57-4bb4-4904-9168-dbe5d5024fa6"
+      },
+      {
+        "id": 185139,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T08:01:36.532Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "148-ashv2_ask_half_2_ask_mult_0.0_ask_mult_0.75_base_ske_0.25_bid_half_7.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "c7a2935c-84aa-4912-8adb-71cf68987683"
+      },
+      {
+        "id": 185088,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:59:31.930Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "147-ashv2_ask_half_2_ask_mult_1.0_base_ske_0.25_bid_half_6_bid_mult_0.0.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "455cb2a6-0000-4b6b-9f2e-65db9f240519"
+      },
+      {
+        "id": 185040,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:57:37.079Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "146-ashv2_ask_half_1_ask_mult_0.25_bid_half_6_bid_mult_0.5_bid_mult_0.0.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "f0a0b20f-735e-46d4-a4a5-0092e4805849"
+      },
+      {
+        "id": 184997,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:55:31.513Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "145-ashv2_ask_half_2_ask_mult_1.0_bid_half_5_bid_mult_0.0_bid_mult_0.25.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "849553d4-1b27-494b-a2a8-04979b0131bf"
+      },
+      {
+        "id": 184934,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:53:35.934Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "144-ashv2_ask_half_4_ask_mult_0.0_ask_mult_1.0_base_ske_0.25_bid_half_4.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "d07d4d5c-d12c-42d7-b4b0-b3c790a936ed"
+      },
+      {
+        "id": 184882,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:51:40.564Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "143-ashv2_ask_half_7_ask_mult_0.0_ask_mult_0.75_base_ske_0.25_bid_half_5.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "3e46ae62-e500-4820-8032-6c064a13e422"
+      },
+      {
+        "id": 184829,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:49:34.226Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "142-ashv2_ask_half_1_ask_mult_0.0_ask_mult_0.0_base_ske_-0.5_bid_half_5.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "e96e19eb-534d-47dd-bb66-ac75098aab8a"
+      },
+      {
+        "id": 184780,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:47:38.516Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "141-ashv2_ask_half_5_ask_mult_0.25_base_ske_0.5_bid_half_5_bid_mult_0.5.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "e805405d-4e13-482f-9c90-4c11d7549a51"
+      },
+      {
+        "id": 184724,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:45:33.071Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "140-ashv2_ask_half_2_ask_mult_0.5_ask_mult_0.75_base_ske_-0.25_bid_half_7.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "84001d68-0dc6-4ec9-98a4-1067ba870bed"
+      },
+      {
+        "id": 184670,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:43:38.256Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "139-ashv2_ask_half_5_base_ske_-0.25_bid_half_7_bid_mult_0.0_flatten__1.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "dfb6cd3a-4fdd-47e6-9e32-4aa4b24f0eea"
+      },
+      {
+        "id": 184620,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:41:33.242Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "138-ashv2_ask_half_8_ask_mult_0.5_base_ske_0.25_bid_half_7_bid_mult_0.25.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "ee53ec4e-0cf4-4942-b925-b7ba6523b56e"
+      },
+      {
+        "id": 184586,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:39:37.903Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "137-ashv2_ask_half_7_ask_mult_0.75_base_ske_0.25_bid_half_1_bid_mult_0.0.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "41418cdc-737e-41db-8e7b-79e33719a524"
+      },
+      {
+        "id": 184532,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:37:32.547Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "136-ashv2_ask_mult_0.25_base_ske_-0.25_bid_half_2_bid_mult_1.0_flatten__1.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "c7a6e25e-053c-4130-a54a-fe3729e86f18"
+      },
+      {
+        "id": 184486,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:35:36.980Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "135-ashv2_ask_half_5_ask_mult_0.25_bid_mult_0.0_bid_mult_0.25_flatten__0.85.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "f363c814-dfec-452f-ba88-c32c38a45cf4"
+      },
+      {
+        "id": 184432,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:33:31.400Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "134-ashv2_ask_half_4_ask_mult_1.0_base_ske_-0.25_bid_half_4_bid_mult_0.0.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "0ec23771-983b-4dc5-97fc-d50057cf9d95"
+      },
+      {
+        "id": 184390,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:31:36.182Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "133-ashv2_ask_half_2_ask_mult_0.5_ask_mult_0.75_base_ske_-0.25_bid_half_1.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "fb574fea-b938-4be7-af14-8278efeb8b25"
+      },
+      {
+        "id": 184334,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:29:41.112Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "132-ashv2_ask_half_2_ask_mult_0.5_ask_mult_0.75_base_ske_-0.25_bid_half_5.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "de646a80-7720-4086-8980-aa895e3c4a15"
+      },
+      {
+        "id": 184269,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:27:32.893Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "131-ashv2_ask_half_6_base_ske_0.25_bid_half_2_flatten__1_flatten__16.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "bab87e33-fa19-4cf0-a86c-2970cb34a8ae"
+      },
+      {
+        "id": 184204,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:25:36.835Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "130-ashv2_ask_half_4_ask_mult_0.75_base_ske_-0.5_bid_half_8_bid_mult_0.5.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "52a5a100-09ee-40db-8f76-5344087af7d1"
+      },
+      {
+        "id": 184139,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:23:31.634Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "129-ashv2_ask_mult_0.25_base_ske_0.5_bid_half_8_bid_mult_0.0_flatten__8.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "2d98fd70-5341-4d90-b615-660d8e2a2770"
+      },
+      {
+        "id": 184092,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:21:37.511Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "128-ashv2_ask_half_4_ask_mult_0.75_base_ske_0.25_bid_half_5_bid_mult_0.25.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "96c0c97a-883a-4764-a90c-0644e6e2bd31"
+      },
+      {
+        "id": 184034,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:19:31.778Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "127-ashv2_ask_half_5_base_ske_0.5_bid_half_1_bid_mult_0.5_bid_mult_0.75.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "1ba20b22-e3d2-448d-a5cf-186082f7d41c"
+      },
+      {
+        "id": 183978,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:17:37.737Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "126-ashv2_ask_half_2_ask_mult_0.0_ask_mult_0.25_base_ske_-0.5_bid_half_6.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "a477d62f-31b6-426c-a9b3-a31fb0c75f41"
+      },
+      {
+        "id": 183912,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:15:32.461Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "125-ashv2_ask_half_6_bid_half_6_bid_mult_0.0_bid_mult_0.75_flatten__1.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "0222114a-a109-468d-a114-deaeda319113"
+      },
+      {
+        "id": 183856,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:13:36.594Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "124-ashv2_ask_half_6_base_ske_0.25_bid_half_7_bid_mult_0.0_flatten__1.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "68b40bb7-5217-4c8b-afa0-aa9e7d6fc978"
+      },
+      {
+        "id": 183805,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:11:31.386Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "123-ashv2_ask_half_6_ask_mult_0.5_ask_mult_0.0_bid_half_6_bid_mult_0.5.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "87d057f0-099a-4c02-8362-530ad581d1eb"
+      },
+      {
+        "id": 183754,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:09:36.168Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "122-ashv2_ask_half_5_ask_mult_0.25_base_ske_-0.25_bid_half_4_bid_mult_0.0.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "2ec9e5dc-fbfd-4274-ab7c-68fa92b39351"
+      },
+      {
+        "id": 183716,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:07:41.432Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "121-ashv2_ask_half_1_ask_mult_0.0_ask_mult_0.75_base_ske_0.25_bid_mult_1.0.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "277fd5e8-1fd2-4fff-a099-c0cdf5d69167"
+      },
+      {
+        "id": 183657,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:05:35.262Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "120-ashv2_ask_half_7_ask_mult_0.25_base_ske_0.25_bid_half_4_flatten__1.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "277f91f6-1fd6-422c-a1cd-691ce44f7f9f"
+      },
+      {
+        "id": 183599,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:03:30.872Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "119-ashv2_ask_half_2_ask_mult_0.25_bid_half_5_bid_mult_0.0_flatten__1.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "186f5a3b-1f07-4244-9386-c766e834441e"
+      },
+      {
+        "id": 183546,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T07:01:35.807Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "118-ashv2_ask_half_6_ask_mult_0.0_base_ske_0.25_bid_mult_0.75_flatten__12.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "824adca0-9d5c-4352-b980-48b3d36628ca"
+      },
+      {
+        "id": 183503,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T06:59:40.888Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "117-ashv2_ask_half_5_ask_mult_0.5_ask_mult_1.0_base_ske_-0.5_bid_half_7.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "9e04808a-7fc6-4a02-9798-16356a4a203e"
+      },
+      {
+        "id": 183458,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T06:57:35.380Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "116-ashv2_ask_half_7_ask_mult_0.0_base_ske_0.25_bid_half_7_bid_mult_0.5.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "a950bb33-98cf-443f-a931-343fb518cfeb"
+      },
+      {
+        "id": 183412,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T06:55:40.475Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "115-ashv2_ask_half_8_ask_mult_0.5_ask_mult_1.0_bid_half_7_bid_mult_0.75.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "6d6a5349-87ce-4747-ab89-6bd338a6fb0e"
+      },
+      {
+        "id": 183355,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T06:53:34.849Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "114-ashv2_ask_half_5_ask_mult_0.0_ask_mult_0.25_base_ske_-0.25_bid_half_8.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "a37878bc-4e11-46d5-8a67-98a299679d2c"
+      },
+      {
+        "id": 183303,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T06:51:39.655Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "113-ashv2_ask_half_8_ask_mult_0.5_base_ske_-0.5_bid_half_2_bid_mult_0.5.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "22a0ce6b-cd35-4675-8506-5476a2faaba9"
+      },
+      {
+        "id": 183249,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T06:49:34.205Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "112-ashv2_ask_mult_0.25_base_ske_0.5_bid_half_6_flatten__14_flatten__0.95.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "471e92f8-ac01-4340-823b-4991934c8cc8"
+      },
+      {
+        "id": 183202,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T06:47:39.600Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "111-ashv2_ask_mult_0.0_bid_half_5_bid_mult_0.25_flatten__0.7_imbalanc_0.4.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "b090ea18-9c8f-43ef-a8e4-f70ffa33c8b2"
+      },
+      {
+        "id": 183149,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T06:45:34.438Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "110-ashv2_ask_mult_0.0_base_ske_0.25_bid_half_4_bid_mult_0.0_flatten__4.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "2f7a038b-22d0-4cb8-a37d-1f1a3d00e1b4"
+      },
+      {
+        "id": 183098,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T06:43:38.707Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "109-ashv2_ask_half_4_ask_mult_0.0_ask_mult_0.25_base_ske_0.25_bid_half_4.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "8cb54b8a-d46b-4347-ae1c-13f682e0ffb8"
+      },
+      {
+        "id": 183041,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T06:41:33.285Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "108-ashv2_ask_mult_0.25_base_ske_-0.5_bid_mult_0.0_bid_mult_0.75_flatten__20.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "b9d92f7d-89c4-4c76-a590-85dd2aca77f2"
+      },
+      {
+        "id": 182992,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T06:39:38.621Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "107-ashv2_ask_half_2_ask_mult_0.0_bid_half_2_bid_mult_0.75_flatten__1.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "20319266-b23f-4be6-8885-e7a61ae89be2"
+      },
+      {
+        "id": 182931,
+        "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+        "roundId": 2,
+        "submittedAt": "2026-04-16T06:37:33.291Z",
+        "submittedBy": {
+          "firstName": "Albert",
+          "lastName": "Ye"
+        },
+        "status": "FINISHED",
+        "filename": "106-ashv2_ask_half_2_ask_mult_0.5_ask_mult_0.75_base_ske_0.25_bid_half_4.py",
+        "active": false,
+        "simulationApplicationAlgoSubmissionIdentifier": "560d09c9-ed49-42b7-b07c-15918764d7cf"
+      }
+    ],
+    "page": 1,
+    "pageSize": 50,
+    "total": 155
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "submission_id": "212005",
+  "status": "FINISHED",
+  "filename": "428-s3_bs20_hs2_te1.py",
+  "timestamp": "2026-04-16T18:47:32.134000+00:00",
+  "submitted_at": "2026-04-16T18:47:32.134000+00:00",
+  "raw": {
+    "id": 212005,
+    "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+    "roundId": 2,
+    "submittedAt": "2026-04-16T18:47:32.134Z",
+    "submittedBy": {
+      "firstName": "Albert",
+      "lastName": "Ye"
+    },
+    "status": "FINISHED",
+    "filename": "428-s3_bs20_hs2_te1.py",
+    "active": true,
+    "simulationApplicationAlgoSubmissionIdentifier": "0dc933c8-59dd-4f7b-addf-aa2489ac637f"
+  }
+}

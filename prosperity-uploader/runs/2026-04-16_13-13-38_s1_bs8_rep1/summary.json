@@ -1,0 +1,23 @@
+{
+  "strategy_name": "s1_bs8_rep1",
+  "submission_id": "206459",
+  "filename": "407-s1_bs8_rep1.py",
+  "submitted_at": "2026-04-16T17:13:38.845000+00:00",
+  "artifact_path": "runs/2026-04-16_13-13-38_s1_bs8_rep1/artifact.json",
+  "run_dir": "runs/2026-04-16_13-13-38_s1_bs8_rep1",
+  "final_pnl": 9966.65625,
+  "max_pnl": 9966.65625,
+  "min_pnl": -682.0,
+  "max_drawdown": 439.09375,
+  "max_drawdown_pct": 0.009184828133495967,
+  "first_positive_ts": 6700.0,
+  "pnl_slope": 0.10801664194852093,
+  "pnl_volatility": 26.642164220687214,
+  "num_points": 500,
+  "time_horizon": 99800.0,
+  "peak_to_final_drop": 0.0,
+  "recovery_after_drawdown": 10648.65625,
+  "trade_count": null,
+  "products": [],
+  "raw_fields_found": []
+}

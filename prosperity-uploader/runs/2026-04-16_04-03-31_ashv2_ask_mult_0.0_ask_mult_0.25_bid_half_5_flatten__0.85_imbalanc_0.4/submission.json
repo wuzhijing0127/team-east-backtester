@@ -1,6 +1,6 @@
 {
   "submission_id": "185183",
-  "status": "running",
+  "status": "FINISHED",
   "filename": "149-ashv2_ask_mult_0.0_ask_mult_0.25_bid_half_5_flatten__0.85_imbalanc_0.4.py",
   "timestamp": "2026-04-16T08:03:31.798000+00:00",
   "submitted_at": "2026-04-16T08:03:31.798000+00:00",
@@ -13,9 +13,9 @@
       "firstName": "Albert",
       "lastName": "Ye"
     },
-    "status": "SIMULATING",
+    "status": "FINISHED",
     "filename": "149-ashv2_ask_mult_0.0_ask_mult_0.25_bid_half_5_flatten__0.85_imbalanc_0.4.py",
-    "active": false,
+    "active": true,
     "simulationApplicationAlgoSubmissionIdentifier": "a6178f57-4bb4-4904-9168-dbe5d5024fa6"
   }
 }

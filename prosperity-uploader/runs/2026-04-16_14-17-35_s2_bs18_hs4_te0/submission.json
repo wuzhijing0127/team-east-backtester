@@ -1,0 +1,21 @@
+{
+  "submission_id": "210183",
+  "status": "FINISHED",
+  "filename": "419-s2_bs18_hs4_te0.py",
+  "timestamp": "2026-04-16T18:17:36.107000+00:00",
+  "submitted_at": "2026-04-16T18:17:36.107000+00:00",
+  "raw": {
+    "id": 210183,
+    "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+    "roundId": 2,
+    "submittedAt": "2026-04-16T18:17:36.107Z",
+    "submittedBy": {
+      "firstName": "Albert",
+      "lastName": "Ye"
+    },
+    "status": "FINISHED",
+    "filename": "419-s2_bs18_hs4_te0.py",
+    "active": true,
+    "simulationApplicationAlgoSubmissionIdentifier": "c1d055fe-8bd7-40c7-98c9-43e7b3517607"
+  }
+}

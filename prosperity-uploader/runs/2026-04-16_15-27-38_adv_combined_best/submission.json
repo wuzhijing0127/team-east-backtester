@@ -1,0 +1,21 @@
+{
+  "submission_id": "214453",
+  "status": "running",
+  "filename": "441-adv_combined_best.py",
+  "timestamp": "2026-04-16T19:27:38.524000+00:00",
+  "submitted_at": "2026-04-16T19:27:38.524000+00:00",
+  "raw": {
+    "id": 214453,
+    "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+    "roundId": 2,
+    "submittedAt": "2026-04-16T19:27:38.524Z",
+    "submittedBy": {
+      "firstName": "Albert",
+      "lastName": "Ye"
+    },
+    "status": "SIMULATING",
+    "filename": "441-adv_combined_best.py",
+    "active": false,
+    "simulationApplicationAlgoSubmissionIdentifier": "c198858a-9999-4ac8-8c6e-3cf67a0d460a"
+  }
+}

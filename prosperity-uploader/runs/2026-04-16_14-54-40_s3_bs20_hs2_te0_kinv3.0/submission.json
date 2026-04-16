@@ -1,0 +1,21 @@
+{
+  "submission_id": "212432",
+  "status": "FINISHED",
+  "filename": "431-s3_bs20_hs2_te0_kinv3.0.py",
+  "timestamp": "2026-04-16T18:54:40.711000+00:00",
+  "submitted_at": "2026-04-16T18:54:40.711000+00:00",
+  "raw": {
+    "id": 212432,
+    "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+    "roundId": 2,
+    "submittedAt": "2026-04-16T18:54:40.711Z",
+    "submittedBy": {
+      "firstName": "Albert",
+      "lastName": "Ye"
+    },
+    "status": "FINISHED",
+    "filename": "431-s3_bs20_hs2_te0_kinv3.0.py",
+    "active": true,
+    "simulationApplicationAlgoSubmissionIdentifier": "58854ff4-9e86-45ae-9586-06770eae9abd"
+  }
+}

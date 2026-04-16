@@ -1,0 +1,21 @@
+{
+  "submission_id": "188617",
+  "status": "FINISHED",
+  "filename": "207-ashv2_base_ske_0.25_bid_half_7_flatten__1_flatten__0.8_imbalanc_0.4.py",
+  "timestamp": "2026-04-16T10:03:31.110000+00:00",
+  "submitted_at": "2026-04-16T10:03:31.110000+00:00",
+  "raw": {
+    "id": 188617,
+    "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+    "roundId": 2,
+    "submittedAt": "2026-04-16T10:03:31.110Z",
+    "submittedBy": {
+      "firstName": "Albert",
+      "lastName": "Ye"
+    },
+    "status": "FINISHED",
+    "filename": "207-ashv2_base_ske_0.25_bid_half_7_flatten__1_flatten__0.8_imbalanc_0.4.py",
+    "active": true,
+    "simulationApplicationAlgoSubmissionIdentifier": "3c451d1d-2dc1-4ac8-8c11-66faa9db9df9"
+  }
+}

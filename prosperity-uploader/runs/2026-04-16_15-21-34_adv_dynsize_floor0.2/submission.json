@@ -1,0 +1,21 @@
+{
+  "submission_id": "214053",
+  "status": "FINISHED",
+  "filename": "438-adv_dynsize_floor0.2.py",
+  "timestamp": "2026-04-16T19:21:35.103000+00:00",
+  "submitted_at": "2026-04-16T19:21:35.103000+00:00",
+  "raw": {
+    "id": 214053,
+    "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+    "roundId": 2,
+    "submittedAt": "2026-04-16T19:21:35.103Z",
+    "submittedBy": {
+      "firstName": "Albert",
+      "lastName": "Ye"
+    },
+    "status": "FINISHED",
+    "filename": "438-adv_dynsize_floor0.2.py",
+    "active": true,
+    "simulationApplicationAlgoSubmissionIdentifier": "8df5d026-186f-4266-8dde-39cf27d3826f"
+  }
+}

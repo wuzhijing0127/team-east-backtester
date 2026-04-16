@@ -1,0 +1,21 @@
+{
+  "submission_id": "195624",
+  "status": "FINISHED",
+  "filename": "299-ashv2_ask_half_8_base_ske_0.25_bid_mult_1.0_flatten__8_flatten__1.0.py",
+  "timestamp": "2026-04-16T13:28:34.842000+00:00",
+  "submitted_at": "2026-04-16T13:28:34.842000+00:00",
+  "raw": {
+    "id": 195624,
+    "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+    "roundId": 2,
+    "submittedAt": "2026-04-16T13:28:34.842Z",
+    "submittedBy": {
+      "firstName": "Albert",
+      "lastName": "Ye"
+    },
+    "status": "FINISHED",
+    "filename": "299-ashv2_ask_half_8_base_ske_0.25_bid_mult_1.0_flatten__8_flatten__1.0.py",
+    "active": true,
+    "simulationApplicationAlgoSubmissionIdentifier": "41e8baf9-2e7b-4526-b2cb-29493984de6d"
+  }
+}

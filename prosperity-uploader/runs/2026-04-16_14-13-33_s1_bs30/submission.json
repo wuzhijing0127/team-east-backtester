@@ -1,0 +1,21 @@
+{
+  "submission_id": "209953",
+  "status": "FINISHED",
+  "filename": "417-s1_bs30.py",
+  "timestamp": "2026-04-16T18:13:33.765000+00:00",
+  "submitted_at": "2026-04-16T18:13:33.765000+00:00",
+  "raw": {
+    "id": 209953,
+    "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+    "roundId": 2,
+    "submittedAt": "2026-04-16T18:13:33.765Z",
+    "submittedBy": {
+      "firstName": "Albert",
+      "lastName": "Ye"
+    },
+    "status": "FINISHED",
+    "filename": "417-s1_bs30.py",
+    "active": true,
+    "simulationApplicationAlgoSubmissionIdentifier": "a0e8a3e2-d29a-4807-a6ae-23cb6103c27b"
+  }
+}

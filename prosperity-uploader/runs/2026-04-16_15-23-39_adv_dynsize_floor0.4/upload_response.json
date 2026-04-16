@@ -1,0 +1,26 @@
+{
+  "file_path": "/Users/jim/Desktop/team-east-backtester/prosperity-uploader/generated/adv_dynsize_floor0.4.py",
+  "file_hash": "5c97ca2fd60f719c573fa9a1870dc670f740dea68ad408e99a3f944eafe66b12",
+  "filename": "adv_dynsize_floor0.4.py",
+  "status_code": 201,
+  "response_body": {
+    "success": true,
+    "status": 201,
+    "data": {
+      "id": 214200,
+      "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
+      "roundId": 2,
+      "submittedAt": "2026-04-16T19:23:39.382Z",
+      "submittedBy": {
+        "firstName": "Albert",
+        "lastName": "Ye"
+      },
+      "status": "SIMULATING",
+      "filename": "439-adv_dynsize_floor0.4.py",
+      "active": false,
+      "simulationApplicationAlgoSubmissionIdentifier": "f3f862d4-160d-4395-89d4-ebb7c723d04c"
+    }
+  },
+  "timestamp": "2026-04-16T19:23:39.108666+00:00",
+  "submission_id": "214200"
+}
