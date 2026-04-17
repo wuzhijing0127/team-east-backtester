@@ -1,0 +1,396 @@
+{
+  "baseline_pnl": 10039.4375,
+  "results": [
+    {
+      "config_name": "NT_A2_4",
+      "family": "neutral_taking",
+      "pnl": 10048.71875,
+      "delta": 9.28125,
+      "max_dd": 439.09375,
+      "rank": 1,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "BASELINE_CHAMPION",
+      "family": "baseline",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 2,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NT_A2_1",
+      "family": "neutral_taking",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 3,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NT_A2_2",
+      "family": "neutral_taking",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 4,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NT_A2_5",
+      "family": "neutral_taking",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 5,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NT_A3_2",
+      "family": "neutral_taking",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 6,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "AQ_B1_2",
+      "family": "asym_quote",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 7,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "AQ_B1_4",
+      "family": "asym_quote",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 8,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "AQ_B2_1",
+      "family": "asym_quote",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 9,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "AQ_B2_2",
+      "family": "asym_quote",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 10,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "AQ_B2_3",
+      "family": "asym_quote",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 11,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "AQ_B2_4",
+      "family": "asym_quote",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 12,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "AQ_B3_1",
+      "family": "asym_quote",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 13,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "AQ_B3_2",
+      "family": "asym_quote",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 14,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NS_C1_1",
+      "family": "neutral_schedule",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 15,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NS_C1_3",
+      "family": "neutral_schedule",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 16,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NS_C2_1",
+      "family": "neutral_schedule",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 17,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NS_C2_2",
+      "family": "neutral_schedule",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 18,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NS_C3_2",
+      "family": "neutral_schedule",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 19,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "PC_D3_2",
+      "family": "portfolio_coupling",
+      "pnl": 10039.4375,
+      "delta": 0.0,
+      "max_dd": 439.09375,
+      "rank": 20,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NT_A1_2",
+      "family": "neutral_taking",
+      "pnl": 10035.125,
+      "delta": -4.3125,
+      "max_dd": 439.09375,
+      "rank": 21,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NT_A1_3",
+      "family": "neutral_taking",
+      "pnl": 10035.125,
+      "delta": -4.3125,
+      "max_dd": 439.09375,
+      "rank": 22,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NT_A1_5",
+      "family": "neutral_taking",
+      "pnl": 10035.125,
+      "delta": -4.3125,
+      "max_dd": 439.09375,
+      "rank": 23,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NT_A1_6",
+      "family": "neutral_taking",
+      "pnl": 10035.125,
+      "delta": -4.3125,
+      "max_dd": 439.09375,
+      "rank": 24,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NT_A3_1",
+      "family": "neutral_taking",
+      "pnl": 10035.125,
+      "delta": -4.3125,
+      "max_dd": 439.09375,
+      "rank": 25,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NT_A3_3",
+      "family": "neutral_taking",
+      "pnl": 10035.125,
+      "delta": -4.3125,
+      "max_dd": 439.09375,
+      "rank": 26,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "PC_D2_1",
+      "family": "portfolio_coupling",
+      "pnl": 10035.125,
+      "delta": -4.3125,
+      "max_dd": 439.09375,
+      "rank": 27,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NT_A1_1",
+      "family": "neutral_taking",
+      "pnl": 10021.53125,
+      "delta": -17.90625,
+      "max_dd": 439.09375,
+      "rank": 28,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "NT_A1_4",
+      "family": "neutral_taking",
+      "pnl": 10021.53125,
+      "delta": -17.90625,
+      "max_dd": 439.09375,
+      "rank": 29,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "PC_D2_2",
+      "family": "portfolio_coupling",
+      "pnl": 10021.53125,
+      "delta": -17.90625,
+      "max_dd": 439.09375,
+      "rank": 30,
+      "class": "no change vs baseline"
+    },
+    {
+      "config_name": "AQ_B1_1",
+      "family": "asym_quote",
+      "pnl": 9967.875,
+      "delta": -71.5625,
+      "max_dd": 439.09375,
+      "rank": 31,
+      "class": "worse than baseline"
+    },
+    {
+      "config_name": "AQ_B1_3",
+      "family": "asym_quote",
+      "pnl": 9967.875,
+      "delta": -71.5625,
+      "max_dd": 439.09375,
+      "rank": 32,
+      "class": "worse than baseline"
+    },
+    {
+      "config_name": "AQ_B1_5",
+      "family": "asym_quote",
+      "pnl": 9967.875,
+      "delta": -71.5625,
+      "max_dd": 439.09375,
+      "rank": 33,
+      "class": "worse than baseline"
+    },
+    {
+      "config_name": "AQ_B1_6",
+      "family": "asym_quote",
+      "pnl": 9967.875,
+      "delta": -71.5625,
+      "max_dd": 439.09375,
+      "rank": 34,
+      "class": "worse than baseline"
+    },
+    {
+      "config_name": "AQ_B3_3",
+      "family": "asym_quote",
+      "pnl": 9967.875,
+      "delta": -71.5625,
+      "max_dd": 439.09375,
+      "rank": 35,
+      "class": "worse than baseline"
+    },
+    {
+      "config_name": "NS_C3_1",
+      "family": "neutral_schedule",
+      "pnl": 9967.875,
+      "delta": -71.5625,
+      "max_dd": 439.09375,
+      "rank": 36,
+      "class": "worse than baseline"
+    },
+    {
+      "config_name": "PC_D3_1",
+      "family": "portfolio_coupling",
+      "pnl": 9967.875,
+      "delta": -71.5625,
+      "max_dd": 439.09375,
+      "rank": 37,
+      "class": "worse than baseline"
+    },
+    {
+      "config_name": "NT_A2_3",
+      "family": "neutral_taking",
+      "pnl": 9933.4375,
+      "delta": -106.0,
+      "max_dd": 439.09375,
+      "rank": 38,
+      "class": "worse than baseline"
+    },
+    {
+      "config_name": "NS_C1_2",
+      "family": "neutral_schedule",
+      "pnl": 9933.4375,
+      "delta": -106.0,
+      "max_dd": 439.09375,
+      "rank": 39,
+      "class": "worse than baseline"
+    },
+    {
+      "config_name": "PC_D1_1",
+      "family": "portfolio_coupling",
+      "pnl": 9835.25,
+      "delta": -204.1875,
+      "max_dd": 439.09375,
+      "rank": 40,
+      "class": "worse than baseline"
+    },
+    {
+      "config_name": "PC_D1_2",
+      "family": "portfolio_coupling",
+      "pnl": 9835.25,
+      "delta": -204.1875,
+      "max_dd": 439.09375,
+      "rank": 41,
+      "class": "worse than baseline"
+    }
+  ],
+  "top_per_family": {
+    "neutral_taking": [
+      "NT_A2_4",
+      "NT_A2_1",
+      "NT_A2_2"
+    ],
+    "asym_quote": [
+      "AQ_B1_2",
+      "AQ_B1_4",
+      "AQ_B2_1"
+    ],
+    "neutral_schedule": [
+      "NS_C1_1",
+      "NS_C1_3",
+      "NS_C2_1"
+    ],
+    "portfolio_coupling": [
+      "PC_D3_2",
+      "PC_D2_1",
+      "PC_D2_2"
+    ]
+  }
+}

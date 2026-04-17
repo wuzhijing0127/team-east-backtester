@@ -1,0 +1,42 @@
+rank,config_name,family,pnl,delta,max_dd,class
+1,NT_A2_4,neutral_taking,10048.71875,9.28125,439.09375,no change vs baseline
+2,BASELINE_CHAMPION,baseline,10039.4375,0.0,439.09375,no change vs baseline
+3,NT_A2_1,neutral_taking,10039.4375,0.0,439.09375,no change vs baseline
+4,NT_A2_2,neutral_taking,10039.4375,0.0,439.09375,no change vs baseline
+5,NT_A2_5,neutral_taking,10039.4375,0.0,439.09375,no change vs baseline
+6,NT_A3_2,neutral_taking,10039.4375,0.0,439.09375,no change vs baseline
+7,AQ_B1_2,asym_quote,10039.4375,0.0,439.09375,no change vs baseline
+8,AQ_B1_4,asym_quote,10039.4375,0.0,439.09375,no change vs baseline
+9,AQ_B2_1,asym_quote,10039.4375,0.0,439.09375,no change vs baseline
+10,AQ_B2_2,asym_quote,10039.4375,0.0,439.09375,no change vs baseline
+11,AQ_B2_3,asym_quote,10039.4375,0.0,439.09375,no change vs baseline
+12,AQ_B2_4,asym_quote,10039.4375,0.0,439.09375,no change vs baseline
+13,AQ_B3_1,asym_quote,10039.4375,0.0,439.09375,no change vs baseline
+14,AQ_B3_2,asym_quote,10039.4375,0.0,439.09375,no change vs baseline
+15,NS_C1_1,neutral_schedule,10039.4375,0.0,439.09375,no change vs baseline
+16,NS_C1_3,neutral_schedule,10039.4375,0.0,439.09375,no change vs baseline
+17,NS_C2_1,neutral_schedule,10039.4375,0.0,439.09375,no change vs baseline
+18,NS_C2_2,neutral_schedule,10039.4375,0.0,439.09375,no change vs baseline
+19,NS_C3_2,neutral_schedule,10039.4375,0.0,439.09375,no change vs baseline
+20,PC_D3_2,portfolio_coupling,10039.4375,0.0,439.09375,no change vs baseline
+21,NT_A1_2,neutral_taking,10035.125,-4.3125,439.09375,no change vs baseline
+22,NT_A1_3,neutral_taking,10035.125,-4.3125,439.09375,no change vs baseline
+23,NT_A1_5,neutral_taking,10035.125,-4.3125,439.09375,no change vs baseline
+24,NT_A1_6,neutral_taking,10035.125,-4.3125,439.09375,no change vs baseline
+25,NT_A3_1,neutral_taking,10035.125,-4.3125,439.09375,no change vs baseline
+26,NT_A3_3,neutral_taking,10035.125,-4.3125,439.09375,no change vs baseline
+27,PC_D2_1,portfolio_coupling,10035.125,-4.3125,439.09375,no change vs baseline
+28,NT_A1_1,neutral_taking,10021.53125,-17.90625,439.09375,no change vs baseline
+29,NT_A1_4,neutral_taking,10021.53125,-17.90625,439.09375,no change vs baseline
+30,PC_D2_2,portfolio_coupling,10021.53125,-17.90625,439.09375,no change vs baseline
+31,AQ_B1_1,asym_quote,9967.875,-71.5625,439.09375,worse than baseline
+32,AQ_B1_3,asym_quote,9967.875,-71.5625,439.09375,worse than baseline
+33,AQ_B1_5,asym_quote,9967.875,-71.5625,439.09375,worse than baseline
+34,AQ_B1_6,asym_quote,9967.875,-71.5625,439.09375,worse than baseline
+35,AQ_B3_3,asym_quote,9967.875,-71.5625,439.09375,worse than baseline
+36,NS_C3_1,neutral_schedule,9967.875,-71.5625,439.09375,worse than baseline
+37,PC_D3_1,portfolio_coupling,9967.875,-71.5625,439.09375,worse than baseline
+38,NT_A2_3,neutral_taking,9933.4375,-106.0,439.09375,worse than baseline
+39,NS_C1_2,neutral_schedule,9933.4375,-106.0,439.09375,worse than baseline
+40,PC_D1_1,portfolio_coupling,9835.25,-204.1875,439.09375,worse than baseline
+41,PC_D1_2,portfolio_coupling,9835.25,-204.1875,439.09375,worse than baseline
