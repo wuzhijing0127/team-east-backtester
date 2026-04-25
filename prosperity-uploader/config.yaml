@@ -9,7 +9,7 @@ base_api: "https://3dzqiahkw1.execute-api.eu-west-1.amazonaws.com/prod"
 upload_endpoint: "/submission/algo"                           # POST (singular)
 submissions_endpoint: "/submissions/algo/{round_id}"          # GET list (plural, round-scoped)
 graph_endpoint: "/submissions/algo/{submission_id}/graph"     # GET graph (plural)
-round_id: 2                                                   # current active competition round
+round_id: 3                                                   # current active competition round (server assigns round 3)
 
 # Timing (conservative defaults)
 poll_interval_seconds: 10

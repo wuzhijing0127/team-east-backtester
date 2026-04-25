@@ -235,15 +235,34 @@ def find_submission_for_upload(
     if run_dir:
         save_json(raw_response, run_dir / "submissions_list_response.json")
 
-    # Strategy 1: match by ID hint
+    # Strategy 1: match by ID hint (with indexing-delay retries)
     if submission_id_hint:
-        for s in subs:
-            if s.submission_id == submission_id_hint:
-                logger.info("Found submission by ID hint: %s (status: %s)", s.submission_id, s.status.value)
-                return s
+        for retry in range(4):
+            for s in subs:
+                if s.submission_id == submission_id_hint:
+                    logger.info(
+                        "Found submission by ID hint: %s (status: %s)",
+                        s.submission_id, s.status.value,
+                    )
+                    return s
+            if retry < 3:
+                logger.info(
+                    "Submission %s not in list yet (retry %d/4) — server indexing lag, waiting 5s",
+                    submission_id_hint, retry + 1,
+                )
+                time.sleep(5)
+                subs, raw_response = list_submissions(client, config, page=1, page_size=50)
+                if run_dir:
+                    save_json(raw_response, run_dir / "submissions_list_response.json")
+        # Trust the upload-response ID; let poll_submission_until_ready retry lookup
         logger.warning(
-            "Submission ID %s not found in list — falling through to filename match",
+            "Submission %s still not in recent list after retries — trusting upload-response ID; "
+            "poll step will retry until it appears.",
             submission_id_hint,
+        )
+        return SubmissionRecord(
+            submission_id=submission_id_hint,
+            status=SubmissionStatus.PENDING,
         )
 
     # Strategy 2: filter by filename + time tolerance

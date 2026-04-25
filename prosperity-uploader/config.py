@@ -142,11 +142,22 @@ class Config:
         return cls(**filtered)
 
     def validate(self) -> None:
-        """Check that required settings are present."""
+        """Check that required settings are present; auto-fetch token if missing."""
         if not self.bearer_token:
-            raise ConfigError(
-                "Bearer token is required. Set via PROSPERITY_TOKEN env var, "
-                "--token CLI flag, or bearer_token in config.yaml"
-            )
+            # Auto-fetch via Cognito if ~/.prosperity_creds exists
+            try:
+                from auth_cognito import get_token
+                import logging
+                logging.getLogger("prosperity").info(
+                    "No token provided — fetching fresh token via Cognito auto-auth"
+                )
+                self.bearer_token = get_token()
+            except Exception as e:
+                raise ConfigError(
+                    f"Bearer token is required. Set via PROSPERITY_TOKEN env var, "
+                    f"--token CLI flag, bearer_token in config.yaml, "
+                    f"or create ~/.prosperity_creds for auto-auth "
+                    f"(auto-auth failed: {e})"
+                )
         if not self.base_api:
             raise ConfigError("base_api must be set")

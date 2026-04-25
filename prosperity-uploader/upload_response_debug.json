@@ -1,26 +1,26 @@
 {
-  "file_path": "/Users/jim/Desktop/team-east-backtester/teameastbt/resources/round1/variants/v4o_L1_14.py",
-  "file_hash": "471c68fd15794a260364d2e544cd36db98f90358be6f15b267070597ec65d746",
-  "filename": "v4o_L1_14.py",
+  "file_path": "/Users/jim/Desktop/team-east-backtester/strategies/round2/r2_ash_limit50_v1.py",
+  "file_hash": "06b806ee04f61b4b0ceceddd58e4dd0b87cc7992b3b967556ea72ff5381aaf8a",
+  "filename": "r2_ash_limit50_v1.py",
   "status_code": 201,
   "response_body": {
     "success": true,
     "status": 201,
     "data": {
-      "id": 178293,
+      "id": 334746,
       "teamId": "c6c2ea09-32b4-4658-9853-51b5364a6f52",
-      "roundId": 2,
-      "submittedAt": "2026-04-16T03:35:34.509Z",
+      "roundId": 3,
+      "submittedAt": "2026-04-20T03:10:34.565Z",
       "submittedBy": {
         "firstName": "Albert",
         "lastName": "Ye"
       },
       "status": "SIMULATING",
-      "filename": "43-v4o_L1_14.py",
+      "filename": "53-r2_ash_limit50_v1.py",
       "active": false,
-      "simulationApplicationAlgoSubmissionIdentifier": "c4c1b29f-593c-48cd-b3fe-9bbb44e9997e"
+      "simulationApplicationAlgoSubmissionIdentifier": "8a92eace-1a44-43bc-aa5d-1311a25a560e"
     }
   },
-  "timestamp": "2026-04-16T03:35:34.131754+00:00",
-  "submission_id": "178293"
+  "timestamp": "2026-04-20T03:10:34.120000+00:00",
+  "submission_id": "334746"
 }
