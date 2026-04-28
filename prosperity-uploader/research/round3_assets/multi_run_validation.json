@@ -1,0 +1,86 @@
+{
+  "started_at": "2026-04-26T20:38:54.048968",
+  "runs": [
+    {
+      "run_id": "A_winner_rep1",
+      "variant": "A_winner",
+      "rep": 1,
+      "pnl": 1604.265625,
+      "dd": 592.87890625,
+      "score": 1307.826171875,
+      "when": "2026-04-26T20:40:35.361563"
+    },
+    {
+      "run_id": "A_winner_rep2",
+      "variant": "A_winner",
+      "rep": 2,
+      "pnl": 1604.265625,
+      "dd": 592.87890625,
+      "score": 1307.826171875,
+      "when": "2026-04-26T20:42:32.378117"
+    },
+    {
+      "run_id": "A_winner_rep3",
+      "variant": "A_winner",
+      "rep": 3,
+      "pnl": 1604.265625,
+      "dd": 592.87890625,
+      "score": 1307.826171875,
+      "when": "2026-04-26T20:44:28.642175"
+    },
+    {
+      "run_id": "B_quote_rep1",
+      "variant": "B_quote",
+      "rep": 1,
+      "pnl": 1438.265625,
+      "dd": 517.71875,
+      "score": 1179.40625,
+      "when": "2026-04-26T20:46:35.751217"
+    },
+    {
+      "run_id": "B_quote_rep2",
+      "variant": "B_quote",
+      "rep": 2,
+      "pnl": 1438.265625,
+      "dd": 517.71875,
+      "score": 1179.40625,
+      "when": "2026-04-26T20:48:33.141457"
+    },
+    {
+      "run_id": "B_quote_rep3",
+      "variant": "B_quote",
+      "rep": 3,
+      "pnl": 1438.265625,
+      "dd": 517.71875,
+      "score": 1179.40625,
+      "when": "2026-04-26T20:50:29.765397"
+    },
+    {
+      "run_id": "C_baseline_rep1",
+      "variant": "C_baseline",
+      "rep": 1,
+      "pnl": 1438.265625,
+      "dd": 517.71875,
+      "score": 1179.40625,
+      "when": "2026-04-26T20:52:36.239633"
+    },
+    {
+      "run_id": "C_baseline_rep2",
+      "variant": "C_baseline",
+      "rep": 2,
+      "pnl": 1438.265625,
+      "dd": 517.71875,
+      "score": 1179.40625,
+      "when": "2026-04-26T20:54:32.780278"
+    },
+    {
+      "run_id": "C_baseline_rep3",
+      "variant": "C_baseline",
+      "rep": 3,
+      "pnl": 1438.265625,
+      "dd": 517.71875,
+      "score": 1179.40625,
+      "when": "2026-04-26T20:56:29.538949"
+    }
+  ]
+}

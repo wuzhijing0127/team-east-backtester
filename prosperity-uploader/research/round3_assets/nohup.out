@@ -1,0 +1,832 @@
+[01:29:15] === Research loop started: budget 12.0h, deadline 2026-04-25 13:29 ===
+[01:29:15] Best so far: pnl=None variant=None
+[01:29:15] No baseline result yet — uploading baseline first.
+[01:29:17]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[01:30:24]   upload RATE-LIMITED (5 retries exhausted)
+[01:30:24]   rate limited; sleeping 300s before retry
+[01:38:34]   baseline asset_pnl = +1130
+[01:40:04] --- iter 1: trying trend-follow on mid + microprice (variant preset_momentum)
+[01:40:06]   guardrail: local sim ok: 30000 ticks, 119761 orders (3.99/tick)
+[01:41:34]   asset_pnl = +381  max_dd=1736  vol=62.8
+[01:41:34]   ❌ reject: would be +381 vs best +1130
+[01:42:09] === Research loop started: budget 12.0h, deadline 2026-04-25 13:42 ===
+[01:42:09] Best so far: pnl=1129.8046875 variant=baseline
+[01:42:09] --- iter 1: trying fade against 60-tick mid avg (variant preset_meanrev)
+[01:42:12]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[01:44:31]   asset_pnl = +1600  max_dd=789  vol=37.3
+[01:44:31]   ✅ ACCEPT: +470 over previous best (+1130)
+[01:44:41] --- iter 2: trying deep book pressure dominant (variant preset_deepbook)
+[01:44:43]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[01:47:34]   asset_pnl = +1187  max_dd=1090  vol=42.0
+[01:47:34]   ❌ reject: would be +1187 vs best +1600
+[01:47:44] --- iter 3: trying spread widens under high realized vol (variant preset_volregime)
+[01:47:46]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[01:49:34]   asset_pnl = +1218  max_dd=1041  vol=41.6
+[01:49:34]   ❌ reject: would be +1218 vs best +1600
+[01:49:44] --- iter 4: trying tighter spread + larger size (variant preset_tight)
+[01:49:46]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[01:51:34]   asset_pnl = +1130  max_dd=1222  vol=44.2
+[01:51:34]   ❌ reject: would be +1130 vs best +1600
+[01:51:44] --- iter 5: trying wide quotes + heavy inv penalty (variant preset_wide_skewed)
+[01:51:46]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[01:53:33]   asset_pnl = +607  max_dd=1050  vol=39.9
+[01:53:33]   ❌ reject: would be +607 vs best +1600
+[01:53:43] --- iter 6: trying microprice tilt dominant (variant preset_microheavy)
+[01:53:45]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[01:55:35]   asset_pnl = +1130  max_dd=1222  vol=44.2
+[01:55:35]   ❌ reject: would be +1130 vs best +1600
+[01:55:45] --- iter 7: trying momentum + aggressive takes (variant preset_agg_trend)
+[01:55:48]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[01:57:27]   asset_pnl = +1009  max_dd=1288  vol=48.2
+[01:57:27]   ❌ reject: would be +1009 vs best +1600
+[01:57:37] --- iter 8: trying trend + deep imb + asymm (variant preset_combined)
+[01:57:40]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[01:59:26]   asset_pnl = +1199  max_dd=803  vol=33.4
+[01:59:26]   ❌ reject: would be +1199 vs best +1600
+[01:59:36] --- iter 9: trying VF imb_window=15 (variant vf_imb_window_15)
+[01:59:39]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[02:01:28]   asset_pnl = +1590  max_dd=642  vol=33.6
+[02:01:28]   ❌ reject: would be +1590 vs best +1600
+[02:01:38] --- iter 10: trying HG k_inv=0.2 (variant hg_k_inv_0p2)
+[02:01:41]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[02:03:30]   asset_pnl = +1600  max_dd=789  vol=37.3
+[02:03:30]   ❌ reject: would be +1600 vs best +1600
+[02:03:40] --- iter 11: trying HG base_size=30 (variant hg_base_size_30)
+[02:03:43]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[02:05:32]   asset_pnl = +1600  max_dd=789  vol=37.3
+[02:05:32]   ❌ reject: would be +1600 vs best +1600
+[02:05:42] --- iter 12: trying VF micro_trend_coef=0.5 (variant vf_micro_trend_coef_0p5)
+[02:05:45]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[02:08:36]   asset_pnl = +1163  max_dd=838  vol=35.8
+[02:08:36]   ❌ reject: would be +1163 vs best +1600
+[02:08:46] --- iter 13: trying HG revert_coef=0.15 (variant hg_revert_coef_0p15)
+[02:08:49]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[02:11:30]   asset_pnl = +1598  max_dd=925  vol=40.7
+[02:11:30]   ❌ reject: would be +1598 vs best +1600
+[02:11:40] --- iter 14: trying HG trend_lag=10 (variant hg_trend_lag_10)
+[02:11:43]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[02:14:33]   asset_pnl = +1600  max_dd=789  vol=37.3
+[02:14:33]   ❌ reject: would be +1600 vs best +1600
+[02:14:43] --- iter 15: trying HG trend_coef=0.4 (variant hg_trend_coef_0p4)
+[02:14:46]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[02:16:35]   asset_pnl = +1661  max_dd=925  vol=40.5
+[02:16:35]   ✅ ACCEPT: +61 over previous best (+1600)
+[02:16:45] --- iter 16: trying HG micro_coef=1.2 (variant hg_micro_coef_1p2)
+[02:16:48]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[14:41:18] === Research loop started: budget 12.0h, deadline 2026-04-26 02:41 ===
+[14:41:18] Best so far: pnl=1661.28125 variant=hg_trend_coef_0p4
+[14:41:18] --- iter 1: trying wide HG + adaptive long-EMA anchor (variant preset_dual_ema_394682)
+[14:41:20]   guardrail: local sim ok: 30000 ticks, 144134 orders (4.80/tick)
+[14:44:31]   asset_pnl = -4364  max_dd=16667  vol=500.8
+[14:44:31]   ❌ reject: would be -4364 vs best +1661
+[14:44:41] --- iter 2: trying long-EMA-dominant, no short-flow signal (variant preset_dual_ema_pure)
+[14:44:43]   guardrail: local sim ok: 30000 ticks, 160825 orders (5.36/tick)
+[14:47:34]   asset_pnl = -4153  max_dd=16458  vol=503.3
+[14:47:34]   ❌ reject: would be -4153 vs best +1661
+[14:47:44] --- iter 3: trying wide HG + tight VF, no dual-EMA (variant preset_wide_hg_tight_vf)
+[14:47:46]   guardrail: local sim ok: 30000 ticks, 119820 orders (3.99/tick)
+[14:50:30] === Research loop started: budget 12.0h, deadline 2026-04-26 02:50 ===
+[14:50:30] Best so far: pnl=1661.28125 variant=hg_trend_coef_0p4
+[14:50:30] --- iter 1: trying VF trend_lag=15 (variant vf_trend_lag_15)
+[14:50:32]   REJECTED by guardrail: 29940 runtime exceptions in 3-day sim
+[14:50:32] --- iter 2: trying HG k_inv=0.6 (variant hg_k_inv_0p6)
+[14:50:34]   REJECTED by guardrail: 29940 runtime exceptions in 3-day sim
+[14:50:34] --- iter 3: trying HG base_size=25 (variant hg_base_size_25)
+[14:50:36]   REJECTED by guardrail: 29940 runtime exceptions in 3-day sim
+[14:50:36] --- iter 4: trying VF asymm_skew=1.4 (variant vf_asymm_skew_1p4)
+[14:50:38]   REJECTED by guardrail: 29940 runtime exceptions in 3-day sim
+[14:50:38] --- iter 5: trying HG revert_window=40 (variant hg_revert_window_40)
+[14:50:40]   REJECTED by guardrail: 29940 runtime exceptions in 3-day sim
+[14:50:40] --- iter 6: trying HG revert_coef=0.0 (variant hg_revert_coef_0p0)
+[14:50:42]   REJECTED by guardrail: 29940 runtime exceptions in 3-day sim
+[14:50:42] --- iter 7: trying HG trend_lag=4 (variant hg_trend_lag_4)
+[14:50:43]   REJECTED by guardrail: 29940 runtime exceptions in 3-day sim
+[14:50:44] --- iter 8: trying HG imb_coef=0.7 (variant hg_imb_coef_0p7)
+[14:50:45]   REJECTED by guardrail: 29940 runtime exceptions in 3-day sim
+[14:50:45] --- iter 9: trying VF long_ema_alpha=0.001 (variant vf_long_ema_alpha_0p001)
+[14:50:47]   REJECTED by guardrail: 29940 runtime exceptions in 3-day sim
+[14:50:47] --- iter 10: trying HG k_inv=0.35 (variant hg_k_inv_0p35)
+[14:50:49]   REJECTED by guardrail: 29940 runtime exceptions in 3-day sim
+[14:50:49] --- iter 11: trying VF deep_imb_coef=0.3 (variant vf_deep_imb_coef_0p3)
+[14:50:51]   REJECTED by guardrail: 29940 runtime exceptions in 3-day sim
+[14:50:51] --- iter 12: trying VF ema_blend=0.1 (variant vf_ema_blend_0p1)
+[14:50:53]   REJECTED by guardrail: 29940 runtime exceptions in 3-day sim
+[14:50:53] --- iter 13: trying VF ema_alpha=0.05 (variant vf_ema_alpha_0p05)
+[14:50:56] === Research loop started: budget 12.0h, deadline 2026-04-26 02:50 ===
+[14:50:56] Best so far: pnl=1661.28125 variant=hg_trend_coef_0p4
+[14:50:56] --- iter 1: trying VF revert_window=40 (variant vf_revert_window_40)
+[14:50:59]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[14:53:29]   asset_pnl = +1547  max_dd=974  vol=41.2
+[14:53:29]   ❌ reject: would be +1547 vs best +1661
+[14:53:39] --- iter 2: trying HG micro_coef=0.35 (variant hg_micro_coef_0p35)
+[14:53:42]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[14:56:32]   asset_pnl = +1661  max_dd=925  vol=40.5
+[14:56:32]   ❌ reject: would be +1661 vs best +1661
+[14:56:42] --- iter 3: trying HG base_size=28 (variant hg_base_size_28)
+[14:56:45]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[14:59:34]   asset_pnl = +1661  max_dd=925  vol=40.5
+[14:59:34]   ❌ reject: would be +1661 vs best +1661
+[14:59:44] --- iter 4: trying HG micro_trend_coef=0.3 (variant hg_micro_trend_coef_0p3)
+[14:59:48]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:01:27]   asset_pnl = +1661  max_dd=925  vol=40.5
+[15:01:27]   ❌ reject: would be +1661 vs best +1661
+[15:01:37] --- iter 5: trying HG revert_window=20 (variant hg_revert_window_20)
+[15:01:40]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:04:31]   asset_pnl = +1594  max_dd=1106  vol=46.1
+[15:04:31]   ❌ reject: would be +1594 vs best +1661
+[15:04:41] --- iter 6: trying HG revert_coef=0.05 (variant hg_revert_coef_0p05)
+[15:04:44]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:06:33]   asset_pnl = +1598  max_dd=925  vol=40.7
+[15:06:33]   ❌ reject: would be +1598 vs best +1661
+[15:06:43] --- iter 7: trying HG ema_alpha=0.08 (variant hg_ema_alpha_0p08)
+[15:06:46]   guardrail: local sim ok: 30000 ticks, 119794 orders (3.99/tick)
+[15:09:27]   asset_pnl = +1340  max_dd=517  vol=31.2
+[15:09:27]   ❌ reject: would be +1340 vs best +1661
+[15:09:37] --- iter 8: trying HG micro_coef=0.2 (variant hg_micro_coef_0p2)
+[15:09:40]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:10:41] === Research loop started: budget 5.0h, deadline 2026-04-25 20:10 ===
+[15:10:41] Best so far: pnl=1661.28125 variant=hg_trend_coef_0p4
+[15:10:41] --- iter 1: trying fair = long-EMA(micro) only, no flow (variant preset_pure_ema_fair)
+[15:10:43]   guardrail: local sim ok: 30000 ticks, 173123 orders (5.77/tick)
+[15:11:50]   upload RATE-LIMITED (5 retries exhausted)
+[15:11:50]   rate-limited; sleeping 10s and retrying same variant
+[15:12:35]   no summary at /Users/jim/Desktop/team-east-backtester/prosperity-uploader/runs/2026-04-25_15-12-04_r3_assets_preset_pure_ema_fair
+[15:12:35]   upload FAILED — skipping
+[15:12:45] --- iter 2: trying fair += vel_coef · EMA(Δmid) (variant preset_velocity_mom)
+[15:12:47]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:14:36]   asset_pnl = +1130  max_dd=1222  vol=44.2
+[15:14:36]   ❌ reject: would be +1130 vs best +1661
+[15:14:46] --- iter 3: trying winning structure + EMA-velocity (variant preset_winning_plus_vel)
+[15:14:49]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:16:28]   asset_pnl = +1661  max_dd=925  vol=40.5
+[15:16:28]   ❌ reject: would be +1661 vs best +1661
+[15:16:38] --- iter 4: trying pure EMA fair, fast (α=0.005) (variant preset_pure_ema_fast)
+[15:16:40]   guardrail: local sim ok: 30000 ticks, 142558 orders (4.75/tick)
+[15:19:31]   asset_pnl = -3142  max_dd=15454  vol=524.5
+[15:19:31]   ❌ reject: would be -3142 vs best +1661
+[15:19:41] --- iter 5: trying pure EMA + velocity (variant preset_pure_ema_plus_vel)
+[15:19:43]   guardrail: local sim ok: 30000 ticks, 173123 orders (5.77/tick)
+[15:22:33]   asset_pnl = +1601  max_dd=14546  vol=554.2
+[15:22:33]   ❌ reject: would be +1601 vs best +1661
+[15:22:43] --- iter 6: trying VF revert_coef=0.05 (variant vf_revert_coef_0p05)
+[15:22:47]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:24:36]   asset_pnl = +1197  max_dd=1040  vol=38.1
+[15:24:36]   ❌ reject: would be +1197 vs best +1661
+[15:24:46] --- iter 7: trying HG ema_alpha=0.12 (variant hg_ema_alpha_0p12)
+[15:24:49]   guardrail: local sim ok: 30000 ticks, 119768 orders (3.99/tick)
+[15:26:27]   asset_pnl = +1659  max_dd=789  vol=36.3
+[15:26:27]   ❌ reject: would be +1659 vs best +1661
+[15:26:37] --- iter 8: trying HG take_edge=7 (variant hg_take_edge_7)
+[15:26:40]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:29:31]   asset_pnl = +1661  max_dd=925  vol=40.5
+[15:29:31]   ❌ reject: would be +1661 vs best +1661
+[15:29:41] --- iter 9: trying VF vel_coef=0.2 (variant vf_vel_coef_0p2)
+[15:29:44]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:32:36]   asset_pnl = +1661  max_dd=925  vol=40.5
+[15:32:36]   ❌ reject: would be +1661 vs best +1661
+[15:32:46] --- iter 10: trying HG ema_blend=0.3 (variant hg_ema_blend_0p3)
+[15:32:49]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:34:27]   asset_pnl = +1661  max_dd=925  vol=40.5
+[15:34:27]   ❌ reject: would be +1661 vs best +1661
+[15:34:37] --- iter 11: trying HG long_ema_alpha=0.001 (variant hg_long_ema_alpha_0p001)
+[15:34:40]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:36:29]   asset_pnl = +1661  max_dd=925  vol=40.5
+[15:36:29]   ❌ reject: would be +1661 vs best +1661
+[15:36:39] --- iter 12: trying HG revert_window=80 (variant hg_revert_window_80)
+[15:36:42]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:38:31]   asset_pnl = +1661  max_dd=925  vol=40.5
+[15:38:31]   ❌ reject: would be +1661 vs best +1661
+[15:38:41] --- iter 13: trying HG trend_coef=0.5 (variant hg_trend_coef_0p5)
+[15:38:44]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:40:32]   asset_pnl = +1661  max_dd=925  vol=40.5
+[15:40:32]   ❌ reject: would be +1661 vs best +1661
+[15:40:42] --- iter 14: trying VF vel_alpha=0.2 (variant vf_vel_alpha_0p2)
+[15:40:45]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:42:34]   asset_pnl = +1661  max_dd=925  vol=40.5
+[15:42:34]   ❌ reject: would be +1661 vs best +1661
+[15:42:44] --- iter 15: trying HG ema_alpha=0.2 (variant hg_ema_alpha_0p2)
+[15:42:47]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:44:36]   asset_pnl = +1689  max_dd=789  vol=36.6
+[15:44:36]   ✅ ACCEPT: +28 over previous best (+1661)
+[15:44:46] --- iter 16: trying VF ema_blend=0.25 (variant vf_ema_blend_0p25)
+[15:44:49]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:46:27]   asset_pnl = +1689  max_dd=789  vol=36.6
+[15:46:27]   ❌ reject: would be +1689 vs best +1689
+[15:46:37] --- iter 17: trying VF trend_coef=0.3 (variant vf_trend_coef_0p3)
+[15:46:41]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:49:31]   asset_pnl = +1410  max_dd=625  vol=29.0
+[15:49:31]   ❌ reject: would be +1410 vs best +1689
+[15:49:41] --- iter 18: trying HG imb_coef=0.55 (variant hg_imb_coef_0p55)
+[15:49:45]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:51:33]   asset_pnl = +1689  max_dd=789  vol=36.6
+[15:51:33]   ❌ reject: would be +1689 vs best +1689
+[15:51:43] --- iter 19: trying VF revert_coef=0.25 (variant vf_revert_coef_0p25)
+[15:51:47]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:54:27]   asset_pnl = +1655  max_dd=729  vol=34.3
+[15:54:27]   ❌ reject: would be +1655 vs best +1689
+[15:54:37] --- iter 20: trying VF k_inv=0.06 (variant vf_k_inv_0p06)
+[15:54:40]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:56:29]   asset_pnl = +1689  max_dd=789  vol=36.6
+[15:56:29]   ❌ reject: would be +1689 vs best +1689
+[15:56:39] --- iter 21: trying HG take_edge=11 (variant hg_take_edge_11)
+[15:56:42]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[15:59:32]   asset_pnl = +1689  max_dd=789  vol=36.6
+[15:59:32]   ❌ reject: would be +1689 vs best +1689
+[15:59:42] --- iter 22: trying HG take_edge=9 (variant hg_take_edge_9)
+[15:59:45]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:01:34]   asset_pnl = +1689  max_dd=789  vol=36.6
+[16:01:34]   ❌ reject: would be +1689 vs best +1689
+[16:01:44] --- iter 23: trying HG trend_coef=0.2 (variant hg_trend_coef_0p2)
+[16:01:47]   guardrail: local sim ok: 30000 ticks, 119761 orders (3.99/tick)
+[16:03:36]   asset_pnl = +1689  max_dd=789  vol=36.6
+[16:03:36]   ❌ reject: would be +1689 vs best +1689
+[16:03:46] --- iter 24: trying HG ema_blend=0.15 (variant hg_ema_blend_0p15)
+[16:03:49]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:05:27]   asset_pnl = +1689  max_dd=789  vol=36.6
+[16:05:27]   ❌ reject: would be +1689 vs best +1689
+[16:05:37] --- iter 25: trying HG vel_coef=0.1 (variant hg_vel_coef_0p1)
+[16:05:40]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:07:29]   asset_pnl = +1689  max_dd=789  vol=36.6
+[16:07:29]   ❌ reject: would be +1689 vs best +1689
+[16:07:39] --- iter 26: trying VF trend_lag=3 (variant vf_trend_lag_3)
+[16:07:42]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:11:35]   asset_pnl = +1689  max_dd=789  vol=36.6
+[16:11:35]   ❌ reject: would be +1689 vs best +1689
+[16:11:45] --- iter 27: trying VF ema_blend=0.75 (variant vf_ema_blend_0p75)
+[16:11:48]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:13:37]   asset_pnl = +1689  max_dd=789  vol=36.6
+[16:13:37]   ❌ reject: would be +1689 vs best +1689
+[16:13:47] --- iter 28: trying HG soft_cap=120 (variant hg_soft_cap_120)
+[16:13:49]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:15:29]   asset_pnl = +1689  max_dd=789  vol=36.6
+[16:15:29]   ❌ reject: would be +1689 vs best +1689
+[16:15:39] --- iter 29: trying VF revert_window=120 (variant vf_revert_window_120)
+[16:15:42]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:18:33]   asset_pnl = +1625  max_dd=625  vol=32.2
+[16:18:33]   ❌ reject: would be +1625 vs best +1689
+[16:18:43] --- iter 30: trying HG long_ema_alpha=0.008 (variant hg_long_ema_alpha_0p008)
+[16:18:46]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:21:34]   asset_pnl = +1689  max_dd=789  vol=36.6
+[16:21:34]   ❌ reject: would be +1689 vs best +1689
+[16:21:44] --- iter 31: trying VF revert_window=80 (variant vf_revert_window_80)
+[16:21:47]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:23:36]   asset_pnl = +1689  max_dd=789  vol=36.6
+[16:23:36]   ❌ reject: would be +1689 vs best +1689
+[16:23:46] --- iter 32: trying VF imb_coef=0.45 (variant vf_imb_coef_0p45)
+[16:23:49]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:25:28]   asset_pnl = +1689  max_dd=789  vol=36.6
+[16:25:28]   ❌ reject: would be +1689 vs best +1689
+[16:25:38] --- iter 33: trying HG vel_coef=0.5 (variant hg_vel_coef_0p5)
+[16:25:41]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:27:28]   asset_pnl = +1689  max_dd=789  vol=36.6
+[16:27:28]   ❌ reject: would be +1689 vs best +1689
+[16:27:38] --- iter 34: trying VF trend_coef=0.2 (variant vf_trend_coef_0p2)
+[16:27:41]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:29:30]   asset_pnl = +1411  max_dd=625  vol=29.0
+[16:29:30]   ❌ reject: would be +1411 vs best +1689
+[16:29:40] --- iter 35: trying VF vel_alpha=0.4 (variant vf_vel_alpha_0p4)
+[16:29:43]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:31:31]   asset_pnl = +1689  max_dd=789  vol=36.6
+[16:31:31]   ❌ reject: would be +1689 vs best +1689
+[16:31:41] --- iter 36: trying VF base_size=10 (variant vf_base_size_10)
+[16:31:44]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:34:35]   asset_pnl = +1689  max_dd=789  vol=36.6
+[16:34:35]   ❌ reject: would be +1689 vs best +1689
+[16:34:45] --- iter 37: trying HG half_spread=6 (variant hg_half_spread_6)
+[16:34:48]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:36:36]   asset_pnl = +1784  max_dd=1152  vol=45.3
+[16:36:36]   ✅ ACCEPT: +95 over previous best (+1689)
+[16:36:46] --- iter 38: trying HG revert_coef=0.4 (variant hg_revert_coef_0p4)
+[16:36:50]   guardrail: local sim ok: 30000 ticks, 119771 orders (3.99/tick)
+[16:38:30]   asset_pnl = +1615  max_dd=834  vol=36.0
+[16:38:30]   ❌ reject: would be +1615 vs best +1784
+[16:38:40] --- iter 39: trying VF trend_coef=0.1 (variant vf_trend_coef_0p1)
+[16:38:43]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:41:34]   asset_pnl = +1687  max_dd=948  vol=39.9
+[16:41:34]   ❌ reject: would be +1687 vs best +1784
+[16:41:44] --- iter 40: trying VF k_inv=0.04 (variant vf_k_inv_0p04)
+[16:41:47]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:43:35]   asset_pnl = +1784  max_dd=1152  vol=45.3
+[16:43:35]   ❌ reject: would be +1784 vs best +1784
+[16:43:45] --- iter 41: trying VF base_size=25 (variant vf_base_size_25)
+[16:43:48]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:45:27]   asset_pnl = +1784  max_dd=1152  vol=45.3
+[16:45:27]   ❌ reject: would be +1784 vs best +1784
+[16:45:37] --- iter 42: trying HG revert_coef=0.3 (variant hg_revert_coef_0p3)
+[16:45:40]   guardrail: local sim ok: 30000 ticks, 119762 orders (3.99/tick)
+[16:47:29]   asset_pnl = +1703  max_dd=1152  vol=43.5
+[16:47:29]   ❌ reject: would be +1703 vs best +1784
+[16:47:39] --- iter 43: trying HG vel_alpha=0.05 (variant hg_vel_alpha_0p05)
+[16:47:42]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:49:32]   asset_pnl = +1784  max_dd=1152  vol=45.3
+[16:49:32]   ❌ reject: would be +1784 vs best +1784
+[16:49:42] --- iter 44: trying VF micro_coef=0.55 (variant vf_micro_coef_0p55)
+[16:49:45]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:51:34]   asset_pnl = +1784  max_dd=1152  vol=45.3
+[16:51:34]   ❌ reject: would be +1784 vs best +1784
+[16:51:44] --- iter 45: trying HG trend_coef=0.7 (variant hg_trend_coef_0p7)
+[16:51:47]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:53:35]   asset_pnl = +1784  max_dd=1152  vol=45.3
+[16:53:35]   ❌ reject: would be +1784 vs best +1784
+[16:53:45] --- iter 46: trying HG trend_coef=0.45 (variant hg_trend_coef_0p45)
+[16:53:48]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:55:37]   asset_pnl = +1784  max_dd=1152  vol=45.3
+[16:55:37]   ❌ reject: would be +1784 vs best +1784
+[16:55:47] --- iter 47: trying VF trend_coef=0.55 (variant vf_trend_coef_0p55)
+[16:55:50]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[16:57:29]   asset_pnl = +1114  max_dd=1467  vol=53.3
+[16:57:29]   ❌ reject: would be +1114 vs best +1784
+[16:57:39] --- iter 48: trying HG trend_lag=3 (variant hg_trend_lag_3)
+[16:57:42]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:00:31]   asset_pnl = +1703  max_dd=1152  vol=43.5
+[17:00:31]   ❌ reject: would be +1703 vs best +1784
+[17:00:41] --- iter 49: trying HG vel_coef=0.2 (variant hg_vel_coef_0p2)
+[17:00:44]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:03:35]   asset_pnl = +1784  max_dd=1152  vol=45.3
+[17:03:35]   ❌ reject: would be +1784 vs best +1784
+[17:03:45] --- iter 50: trying VF long_ema_alpha=0.003 (variant vf_long_ema_alpha_0p003)
+[17:03:48]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:05:37]   asset_pnl = +1784  max_dd=1152  vol=45.3
+[17:05:37]   ❌ reject: would be +1784 vs best +1784
+[17:05:47] --- iter 51: trying HG vel_coef=-0.3 (variant hg_vel_coef_n0p3)
+[17:05:50]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:07:28]   asset_pnl = +1703  max_dd=1152  vol=43.5
+[17:07:28]   ❌ reject: would be +1703 vs best +1784
+[17:07:38] --- iter 52: trying VF micro_coef=0.8 (variant vf_micro_coef_0p8)
+[17:07:41]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:09:30]   asset_pnl = +1784  max_dd=1152  vol=45.3
+[17:09:30]   ❌ reject: would be +1784 vs best +1784
+[17:09:40] --- iter 53: trying HG revert_window=30 (variant hg_revert_window_30)
+[17:09:43]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:12:33]   asset_pnl = +1639  max_dd=1152  vol=43.6
+[17:12:33]   ❌ reject: would be +1639 vs best +1784
+[17:12:43] --- iter 54: trying VF long_ema_alpha=0.008 (variant vf_long_ema_alpha_0p008)
+[17:12:46]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:14:35]   asset_pnl = +1784  max_dd=1152  vol=45.3
+[17:14:35]   ❌ reject: would be +1784 vs best +1784
+[17:14:45] --- iter 55: trying HG take_edge=6 (variant hg_take_edge_6)
+[17:14:48]   guardrail: local sim ok: 30000 ticks, 119766 orders (3.99/tick)
+[17:16:37]   asset_pnl = +1784  max_dd=1152  vol=45.3
+[17:16:37]   ❌ reject: would be +1784 vs best +1784
+[17:16:47] --- iter 56: trying VF revert_coef=0.3 (variant vf_revert_coef_0p3)
+[17:16:50]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:18:28]   asset_pnl = +1749  max_dd=1092  vol=43.5
+[17:18:28]   ❌ reject: would be +1749 vs best +1784
+[17:18:38] --- iter 57: trying VF take_edge=5 (variant vf_take_edge_5)
+[17:18:41]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:20:29]   asset_pnl = +1784  max_dd=1152  vol=45.3
+[17:20:29]   ❌ reject: would be +1784 vs best +1784
+[17:20:39] --- iter 58: trying VF micro_coef=0.2 (variant vf_micro_coef_0p2)
+[17:20:42]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:22:31]   asset_pnl = +1792  max_dd=1071  vol=42.6
+[17:22:31]   ✅ ACCEPT: +7 over previous best (+1784)
+[17:22:41] --- iter 59: trying HG ema_alpha=0.0 (variant hg_ema_alpha_0p0)
+[17:22:43]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:24:33]   asset_pnl = +1286  max_dd=389  vol=26.2
+[17:24:33]   ❌ reject: would be +1286 vs best +1792
+[17:24:43] --- iter 60: trying VF base_size=20 (variant vf_base_size_20)
+[17:24:45]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:27:36]   asset_pnl = +1792  max_dd=1071  vol=42.6
+[17:27:36]   ❌ reject: would be +1792 vs best +1792
+[17:27:46] --- iter 61: trying HG k_inv=0.14 (variant hg_k_inv_0p14)
+[17:27:49]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:29:27]   asset_pnl = +1792  max_dd=1071  vol=42.6
+[17:29:27]   ❌ reject: would be +1792 vs best +1792
+[17:29:37] --- iter 62: trying VF ema_alpha=0.3 (variant vf_ema_alpha_0p3)
+[17:29:40]   guardrail: local sim ok: 30000 ticks, 119764 orders (3.99/tick)
+[17:31:28]   asset_pnl = +1683  max_dd=1102  vol=48.4
+[17:31:28]   ❌ reject: would be +1683 vs best +1792
+[17:31:38] --- iter 63: trying HG vel_alpha=0.2 (variant hg_vel_alpha_0p2)
+[17:31:41]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:33:30]   asset_pnl = +1792  max_dd=1071  vol=42.6
+[17:33:30]   ❌ reject: would be +1792 vs best +1792
+[17:33:40] --- iter 64: trying VF revert_coef=0.4 (variant vf_revert_coef_0p4)
+[17:33:43]   guardrail: local sim ok: 30000 ticks, 119791 orders (3.99/tick)
+[17:35:32]   asset_pnl = +1801  max_dd=1290  vol=52.9
+[17:35:32]   ✅ ACCEPT: +9 over previous best (+1792)
+[17:35:42] --- iter 65: trying VF revert_coef=0.15 (variant vf_revert_coef_0p15)
+[17:35:45]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[17:38:35]   asset_pnl = +1687  max_dd=948  vol=39.9
+[17:38:35]   ❌ reject: would be +1687 vs best +1801
+[17:38:45] --- iter 66: trying VF take_edge=2 (variant vf_take_edge_2)
+[17:38:47]   guardrail: local sim ok: 30000 ticks, 120561 orders (4.02/tick)
+[17:41:27]   asset_pnl = +4352  max_dd=3802  vol=142.3
+[17:41:27]   ✅ ACCEPT: +2551 over previous best (+1801)
+[17:41:37] --- iter 67: trying VF trend_lag=7 (variant vf_trend_lag_7)
+[17:41:40]   guardrail: local sim ok: 30000 ticks, 120561 orders (4.02/tick)
+[17:43:29]   asset_pnl = +4352  max_dd=3802  vol=142.3
+[17:43:29]   ❌ reject: would be +4352 vs best +4352
+[17:43:39] --- iter 68: trying HG revert_coef=0.25 (variant hg_revert_coef_0p25)
+[17:43:42]   guardrail: local sim ok: 30000 ticks, 120561 orders (4.02/tick)
+[17:45:31]   asset_pnl = +4271  max_dd=3802  vol=141.9
+[17:45:31]   ❌ reject: would be +4271 vs best +4352
+[17:45:41] --- iter 69: trying HG k_inv=0.08 (variant hg_k_inv_0p08)
+[17:45:43]   guardrail: local sim ok: 30000 ticks, 120561 orders (4.02/tick)
+[17:47:32]   asset_pnl = +4352  max_dd=3802  vol=142.3
+[17:47:32]   ❌ reject: would be +4352 vs best +4352
+[17:47:42] --- iter 70: trying HG soft_cap=180 (variant hg_soft_cap_180)
+[17:47:45]   guardrail: local sim ok: 30000 ticks, 120561 orders (4.02/tick)
+[17:49:34]   asset_pnl = +4352  max_dd=3802  vol=142.3
+[17:49:34]   ❌ reject: would be +4352 vs best +4352
+[17:49:44] --- iter 71: trying VF vel_alpha=0.05 (variant vf_vel_alpha_0p05)
+[17:49:47]   guardrail: local sim ok: 30000 ticks, 120561 orders (4.02/tick)
+[17:51:36]   asset_pnl = +4352  max_dd=3802  vol=142.3
+[17:51:36]   ❌ reject: would be +4352 vs best +4352
+[17:51:46] --- iter 72: trying HG ema_blend=0.7 (variant hg_ema_blend_0p7)
+[17:51:49]   guardrail: local sim ok: 30000 ticks, 120561 orders (4.02/tick)
+[17:53:28]   asset_pnl = +4352  max_dd=3802  vol=142.3
+[17:53:28]   ❌ reject: would be +4352 vs best +4352
+[17:53:38] --- iter 73: trying VF base_size=30 (variant vf_base_size_30)
+[17:53:41]   guardrail: local sim ok: 30000 ticks, 120561 orders (4.02/tick)
+[17:56:31]   asset_pnl = +4190  max_dd=4593  vol=171.3
+[17:56:31]   ❌ reject: would be +4190 vs best +4352
+[17:56:41] --- iter 74: trying HG trend_coef=0.35 (variant hg_trend_coef_0p35)
+[17:56:43]   guardrail: local sim ok: 30000 ticks, 120561 orders (4.02/tick)
+[17:58:32]   asset_pnl = +4271  max_dd=3802  vol=141.9
+[17:58:32]   ❌ reject: would be +4271 vs best +4352
+[17:58:42] --- iter 75: trying VF half_spread=2 (variant vf_half_spread_2)
+[17:58:44]   guardrail: local sim ok: 30000 ticks, 120561 orders (4.02/tick)
+[18:00:33]   asset_pnl = +4087  max_dd=4099  vol=155.0
+[18:00:33]   ❌ reject: would be +4087 vs best +4352
+[18:00:43] --- iter 76: trying HG trend_lag=8 (variant hg_trend_lag_8)
+[18:00:46]   guardrail: local sim ok: 30000 ticks, 120561 orders (4.02/tick)
+[18:03:36]   asset_pnl = +4644  max_dd=3916  vol=146.4
+[18:03:36]   ✅ ACCEPT: +292 over previous best (+4352)
+[18:03:46] --- iter 77: trying VF imb_coef=0.15 (variant vf_imb_coef_0p15)
+[18:03:49]   guardrail: local sim ok: 30000 ticks, 120343 orders (4.01/tick)
+[18:06:29]   asset_pnl = +3736  max_dd=2751  vol=106.0
+[18:06:29]   ❌ reject: would be +3736 vs best +4644
+[18:06:39] --- iter 78: trying VF take_edge=4 (variant vf_take_edge_4)
+[18:06:42]   guardrail: local sim ok: 30000 ticks, 119791 orders (3.99/tick)
+[18:08:31]   asset_pnl = +2093  max_dd=1562  vol=62.8
+[18:08:31]   ❌ reject: would be +2093 vs best +4644
+[18:08:41] --- iter 79: trying VF revert_window=30 (variant vf_revert_window_30)
+[18:08:43]   guardrail: local sim ok: 30000 ticks, 119901 orders (4.00/tick)
+[18:10:32]   asset_pnl = +2632  max_dd=1722  vol=75.4
+[18:10:32]   ❌ reject: would be +2632 vs best +4644
+[18:10:42] --- iter 80: trying VF imb_coef=0.7 (variant vf_imb_coef_0p7)
+[18:10:45]   guardrail: local sim ok: 30000 ticks, 121919 orders (4.06/tick)
+[18:12:34]   asset_pnl = +4255  max_dd=4398  vol=166.2
+[18:12:34]   ❌ reject: would be +4255 vs best +4644
+[18:12:44] --- iter 81: trying HG long_ema_alpha=0.0003 (variant hg_long_ema_alpha_0p0003)
+[18:12:47]   guardrail: local sim ok: 30000 ticks, 120561 orders (4.02/tick)
+[18:15:27]   asset_pnl = +4644  max_dd=3916  vol=146.4
+[18:15:27]   ❌ reject: would be +4644 vs best +4644
+[18:15:37] --- iter 82: trying VF trend_coef=-0.2 (variant vf_trend_coef_n0p2)
+[18:15:40]   guardrail: local sim ok: 30000 ticks, 121327 orders (4.04/tick)
+[18:17:29]   asset_pnl = +4963  max_dd=4421  vol=164.0
+[18:17:29]   ✅ ACCEPT: +319 over previous best (+4644)
+[18:17:39] --- iter 83: trying VF ema_alpha=0.18 (variant vf_ema_alpha_0p18)
+[18:17:42]   guardrail: local sim ok: 30000 ticks, 123688 orders (4.12/tick)
+[18:19:31]   asset_pnl = +3270  max_dd=4401  vol=194.0
+[18:19:31]   ❌ reject: would be +3270 vs best +4963
+[18:19:41] --- iter 84: trying HG trend_lag=5 (variant hg_trend_lag_5)
+[18:19:44]   guardrail: local sim ok: 30000 ticks, 121327 orders (4.04/tick)
+[18:21:32]   asset_pnl = +4671  max_dd=4307  vol=160.9
+[18:21:32]   ❌ reject: would be +4671 vs best +4963
+[18:21:42] --- iter 85: trying VF trend_coef=0.4 (variant vf_trend_coef_0p4)
+[18:21:45]   guardrail: local sim ok: 30000 ticks, 120079 orders (4.00/tick)
+[18:23:34]   asset_pnl = +3098  max_dd=1776  vol=86.6
+[18:23:34]   ❌ reject: would be +3098 vs best +4963
+[18:23:44] --- iter 86: trying HG revert_window=120 (variant hg_revert_window_120)
+[18:23:47]   guardrail: local sim ok: 30000 ticks, 121327 orders (4.04/tick)
+[18:26:27]   asset_pnl = +5037  max_dd=4345  vol=162.6
+[18:26:27]   ✅ ACCEPT: +74 over previous best (+4963)
+[18:26:37] --- iter 87: trying VF revert_coef=0.1 (variant vf_revert_coef_0p1)
+[18:26:40]   guardrail: local sim ok: 30000 ticks, 119762 orders (3.99/tick)
+[18:28:28]   asset_pnl = +2085  max_dd=1374  vol=58.4
+[18:28:28]   ❌ reject: would be +2085 vs best +5037
+[18:28:38] --- iter 88: trying VF trend_lag=10 (variant vf_trend_lag_10)
+[18:28:42]   guardrail: local sim ok: 30000 ticks, 122030 orders (4.07/tick)
+[18:31:32]   asset_pnl = +4010  max_dd=4380  vol=185.3
+[18:31:32]   ❌ reject: would be +4010 vs best +5037
+[18:31:42] --- iter 89: trying VF micro_coef=0.4 (variant vf_micro_coef_0p4)
+[18:31:45]   guardrail: local sim ok: 30000 ticks, 121657 orders (4.06/tick)
+[18:33:35]   asset_pnl = +4289  max_dd=4380  vol=168.6
+[18:33:35]   ❌ reject: would be +4289 vs best +5037
+[18:33:45] --- iter 90: trying HG k_inv=0.05 (variant hg_k_inv_0p05)
+[18:33:48]   guardrail: local sim ok: 30000 ticks, 121327 orders (4.04/tick)
+[18:35:28]   asset_pnl = +5037  max_dd=4345  vol=162.6
+[18:35:28]   ❌ reject: would be +5037 vs best +5037
+[18:35:38] --- iter 91: trying VF long_ema_alpha=0.0003 (variant vf_long_ema_alpha_0p0003)
+[18:35:41]   guardrail: local sim ok: 30000 ticks, 121327 orders (4.04/tick)
+[18:38:32]   asset_pnl = +5037  max_dd=4345  vol=162.6
+[18:38:32]   ❌ reject: would be +5037 vs best +5037
+[18:38:42] --- iter 92: trying VF vel_coef=0.1 (variant vf_vel_coef_0p1)
+[18:38:45]   guardrail: local sim ok: 30000 ticks, 121254 orders (4.04/tick)
+[18:40:34]   asset_pnl = +5368  max_dd=3997  vol=155.1
+[18:40:34]   ✅ ACCEPT: +331 over previous best (+5037)
+[18:40:44] --- iter 93: trying HG trend_lag=15 (variant hg_trend_lag_15)
+[18:40:47]   guardrail: local sim ok: 30000 ticks, 121255 orders (4.04/tick)
+[18:43:27]   asset_pnl = +4955  max_dd=3911  vol=152.0
+[18:43:27]   ❌ reject: would be +4955 vs best +5368
+[18:43:37] --- iter 94: trying VF k_inv=0.15 (variant vf_k_inv_0p15)
+[18:43:41]   guardrail: local sim ok: 30000 ticks, 121254 orders (4.04/tick)
+[18:46:31]   asset_pnl = +5368  max_dd=3997  vol=155.1
+[18:46:31]   ❌ reject: would be +5368 vs best +5368
+[18:46:41] --- iter 95: trying HG long_ema_alpha=0.003 (variant hg_long_ema_alpha_0p003)
+[18:46:45]   guardrail: local sim ok: 30000 ticks, 121254 orders (4.04/tick)
+[18:49:33]   asset_pnl = +5368  max_dd=3997  vol=155.1
+[18:49:33]   ❌ reject: would be +5368 vs best +5368
+[18:49:43] --- iter 96: trying HG revert_coef=0.1 (variant hg_revert_coef_0p1)
+[18:49:46]   guardrail: local sim ok: 30000 ticks, 121254 orders (4.04/tick)
+[19:33:37] === Research loop started: budget 5.0h, deadline 2026-04-26 00:33 ===
+[19:33:37] Best so far: pnl=5368.125 variant=vf_vel_coef_0p1
+[19:33:37] --- iter 1: trying HG ema_alpha=0.05 (variant hg_ema_alpha_0p05)
+[19:33:40]   guardrail: local sim ok: 30000 ticks, 121539 orders (4.05/tick)
+[19:35:29]   asset_pnl = +6928  max_dd=5739  vol=271.5
+[19:35:29]   ✅ ACCEPT: +1560 over previous best (+5368)
+[19:35:39] --- iter 2: trying HG half_spread=3 (variant hg_half_spread_3)
+[19:35:43]   guardrail: local sim ok: 30000 ticks, 121539 orders (4.05/tick)
+[19:38:34]   asset_pnl = +6873  max_dd=5842  vol=274.5
+[19:38:34]   ❌ reject: would be +6873 vs best +6928
+[19:38:44] --- iter 3: trying VF take_edge=3 (variant vf_take_edge_3)
+[19:38:47]   guardrail: local sim ok: 30000 ticks, 120490 orders (4.02/tick)
+[19:40:36]   asset_pnl = +5005  max_dd=6391  vol=227.5
+[19:40:36]   ❌ reject: would be +5005 vs best +6928
+[19:40:46] --- iter 4: trying VF half_spread=4 (variant vf_half_spread_4)
+[19:40:49]   guardrail: local sim ok: 30000 ticks, 121539 orders (4.05/tick)
+[19:42:28]   asset_pnl = +6272  max_dd=5659  vol=271.9
+[19:42:28]   ❌ reject: would be +6272 vs best +6928
+[19:42:38] --- iter 5: trying HG revert_window=60 (variant hg_revert_window_60)
+[19:42:40]   guardrail: local sim ok: 30000 ticks, 121436 orders (4.05/tick)
+[19:44:29]   asset_pnl = +5940  max_dd=3780  vol=201.1
+[19:44:29]   ❌ reject: would be +5940 vs best +6928
+[19:44:39] --- iter 6: trying HG trend_coef=0.6 (variant hg_trend_coef_0p6)
+[19:44:42]   guardrail: local sim ok: 30000 ticks, 121423 orders (4.05/tick)
+[19:46:31]   asset_pnl = +6061  max_dd=3748  vol=198.3
+[19:46:31]   ❌ reject: would be +6061 vs best +6928
+[19:46:41] --- iter 7: trying VF vel_coef=0.5 (variant vf_vel_coef_0p5)
+[19:46:44]   guardrail: local sim ok: 30000 ticks, 121264 orders (4.04/tick)
+[19:48:33]   asset_pnl = +6837  max_dd=5575  vol=266.6
+[19:48:33]   ❌ reject: would be +6837 vs best +6928
+[19:48:43] --- iter 8: trying HG micro_coef=0.8 (variant hg_micro_coef_0p8)
+[19:48:47]   guardrail: local sim ok: 30000 ticks, 121540 orders (4.05/tick)
+[19:50:35]   asset_pnl = +6928  max_dd=5739  vol=271.5
+[19:50:35]   ❌ reject: would be +6928 vs best +6928
+[19:50:45] --- iter 9: trying VF vel_coef=-0.2 (variant vf_vel_coef_n0p2)
+[19:50:48]   guardrail: local sim ok: 30000 ticks, 121771 orders (4.06/tick)
+[19:53:28]   asset_pnl = +6721  max_dd=5768  vol=280.6
+[19:53:28]   ❌ reject: would be +6721 vs best +6928
+[19:53:38] --- iter 10: trying VF ema_blend=0.5 (variant vf_ema_blend_0p5)
+[19:53:42]   guardrail: local sim ok: 30000 ticks, 121539 orders (4.05/tick)
+[19:55:30]   asset_pnl = +6928  max_dd=5739  vol=271.5
+[19:55:30]   ❌ reject: would be +6928 vs best +6928
+[19:55:40] --- iter 11: trying HG ema_blend=0.5 (variant hg_ema_blend_0p5)
+[19:55:43]   guardrail: local sim ok: 30000 ticks, 121539 orders (4.05/tick)
+[19:57:32]   asset_pnl = +6928  max_dd=5739  vol=271.5
+[19:57:32]   ❌ reject: would be +6928 vs best +6928
+[19:57:42] --- iter 12: trying VF k_inv=0.1 (variant vf_k_inv_0p1)
+[19:57:45]   guardrail: local sim ok: 30000 ticks, 121539 orders (4.05/tick)
+[19:59:33]   asset_pnl = +6928  max_dd=5739  vol=271.5
+[19:59:33]   ❌ reject: would be +6928 vs best +6928
+[19:59:43] --- iter 13: trying HG base_size=15 (variant hg_base_size_15)
+[19:59:46]   guardrail: local sim ok: 30000 ticks, 121539 orders (4.05/tick)
+[20:02:35]   asset_pnl = +6765  max_dd=5508  vol=265.1
+[20:02:35]   ❌ reject: would be +6765 vs best +6928
+[20:02:45] --- iter 14: trying HG vel_alpha=0.4 (variant hg_vel_alpha_0p4)
+[20:02:48]   guardrail: local sim ok: 30000 ticks, 121539 orders (4.05/tick)
+[20:04:27]   asset_pnl = +6928  max_dd=5739  vol=271.5
+[20:04:27]   ❌ reject: would be +6928 vs best +6928
+[20:04:37] --- iter 15: trying VF half_spread=3 (variant vf_half_spread_3)
+[20:04:40]   guardrail: local sim ok: 30000 ticks, 121539 orders (4.05/tick)
+[20:06:29]   asset_pnl = +6516  max_dd=5645  vol=274.1
+[20:06:29]   ❌ reject: would be +6516 vs best +6928
+[20:06:39] --- iter 16: trying VF soft_cap=120 (variant vf_soft_cap_120)
+[20:06:42]   guardrail: local sim ok: 30000 ticks, 121539 orders (4.05/tick)
+[20:08:28]   asset_pnl = +6706  max_dd=5941  vol=268.9
+[20:08:28]   ❌ reject: would be +6706 vs best +6928
+[20:08:38] --- iter 17: trying VF take_edge=7 (variant vf_take_edge_7)
+[20:08:42]   guardrail: local sim ok: 30000 ticks, 120045 orders (4.00/tick)
+[20:10:30]   asset_pnl = +3410  max_dd=7869  vol=224.5
+[20:10:30]   ❌ reject: would be +3410 vs best +6928
+[20:10:40] --- iter 18: trying VF soft_cap=200 (variant vf_soft_cap_200)
+[20:10:43]   guardrail: local sim ok: 30000 ticks, 121539 orders (4.05/tick)
+[20:13:34]   asset_pnl = +7028  max_dd=5632  vol=271.5
+[20:13:34]   ✅ ACCEPT: +100 over previous best (+6928)
+[20:13:44] --- iter 19: trying VF soft_cap=160 (variant vf_soft_cap_160)
+[20:13:47]   guardrail: local sim ok: 30000 ticks, 121539 orders (4.05/tick)
+[20:15:36]   asset_pnl = +6928  max_dd=5739  vol=271.5
+[20:15:36]   ❌ reject: would be +6928 vs best +7028
+[20:15:46] --- iter 20: trying VF vel_coef=0.3 (variant vf_vel_coef_0p3)
+[20:15:49]   guardrail: local sim ok: 30000 ticks, 121415 orders (4.05/tick)
+[20:17:28]   asset_pnl = +7458  max_dd=5632  vol=267.1
+[20:17:28]   ✅ ACCEPT: +430 over previous best (+7028)
+[20:17:38] All single-axis perturbations explored. Stopping.
+[20:17:38] === Research loop ended ===
+[20:17:38] Best variant: vf_vel_coef_0p3 pnl=+7458
+[20:17:38] HG params: {'limit': 200, 'soft_cap': 150, 'half_spread': 6, 'base_size': 20, 'take_edge': 8, 'k_inv': 0.1, 'micro_coef': 0.5, 'imb_coef': 0.4, 'ema_alpha': 0.05, 'imb_window': 0, 'trend_coef': 0.4, 'trend_lag': 8, 'revert_coef': 0.2, 'revert_window': 120, 'micro_trend_coef': 0.0, 'deep_imb_coef': 0.0, 'vol_widen_coef': 0.0, 'asymm_skew': 1.0, 'long_ema_alpha': 0.0, 'ema_blend': 0.0, 'vel_coef': 0.0, 'vel_alpha': 0.1}
+[20:17:38] VF params: {'limit': 200, 'soft_cap': 200, 'half_spread': 1, 'base_size': 15, 'take_edge': 2, 'k_inv': 0.08, 'micro_coef': 0.2, 'imb_coef': 0.3, 'ema_alpha': 0.0, 'imb_window': 0, 'trend_coef': -0.2, 'trend_lag': 5, 'revert_coef': 0.4, 'revert_window': 60, 'micro_trend_coef': 0.0, 'deep_imb_coef': 0.0, 'vol_widen_coef': 0.0, 'asymm_skew': 1.0, 'long_ema_alpha': 0.0, 'ema_blend': 0.0, 'vel_coef': 0.3, 'vel_alpha': 0.1}
+[20:17:38] Variants tested: 153  accepted: 15
+[20:25:59] === Research loop started: budget 5.0h, deadline 2026-04-26 01:25 ===
+[20:25:59] Best so far: pnl=7458.03125 variant=vf_vel_coef_0p3
+[20:25:59] All single-axis perturbations explored. Stopping.
+[20:25:59] === Research loop ended ===
+[20:25:59] Best variant: vf_vel_coef_0p3 pnl=+7458
+[20:25:59] HG params: {'limit': 200, 'soft_cap': 150, 'half_spread': 6, 'base_size': 20, 'take_edge': 8, 'k_inv': 0.1, 'micro_coef': 0.5, 'imb_coef': 0.4, 'ema_alpha': 0.05, 'imb_window': 0, 'trend_coef': 0.4, 'trend_lag': 8, 'revert_coef': 0.2, 'revert_window': 120, 'micro_trend_coef': 0.0, 'deep_imb_coef': 0.0, 'vol_widen_coef': 0.0, 'asymm_skew': 1.0, 'long_ema_alpha': 0.0, 'ema_blend': 0.0, 'vel_coef': 0.0, 'vel_alpha': 0.1}
+[20:25:59] VF params: {'limit': 200, 'soft_cap': 200, 'half_spread': 1, 'base_size': 15, 'take_edge': 2, 'k_inv': 0.08, 'micro_coef': 0.2, 'imb_coef': 0.3, 'ema_alpha': 0.0, 'imb_window': 0, 'trend_coef': -0.2, 'trend_lag': 5, 'revert_coef': 0.4, 'revert_window': 60, 'micro_trend_coef': 0.0, 'deep_imb_coef': 0.0, 'vol_widen_coef': 0.0, 'asymm_skew': 1.0, 'long_ema_alpha': 0.0, 'ema_blend': 0.0, 'vel_coef': 0.3, 'vel_alpha': 0.1}
+[20:25:59] Variants tested: 153  accepted: 15
+[20:27:33] === Research loop started: budget 5.0h, deadline 2026-04-26 01:27 ===
+[20:27:33] Best so far: pnl=7458.03125 variant=vf_vel_coef_0p3
+[20:27:34] --- iter 1: trying [best] 2ax hg.micro_coef=0.2 + vf.half_spread=3 (variant x2_hgmicro__vfhalf_s_64686)
+[20:27:37]   guardrail: local sim ok: 30000 ticks, 121415 orders (4.05/tick)
+[20:29:35]   asset_pnl = +6445  max_dd=5920  vol=258.5  score=+3486
+[20:29:35]   ❌ reject: score +3486 vs best +4642  (raw pnl +6445)
+[20:29:45] --- iter 2: trying [baseline] HG long_ema_alpha=0.003 (variant hg_long_ema_alpha_0p003)
+[20:29:47]   REJECTED by guardrail: 29940 runtime exceptions in 3-day sim
+[20:29:47] --- iter 3: trying [best] 2ax vf.k_inv=0.06 + vf.revert_coef=0.3 (variant x2_vfk_inv_vfrevert_85717)
+[20:29:50]   guardrail: local sim ok: 30000 ticks, 120466 orders (4.02/tick)
+[20:31:28]   asset_pnl = +4736  max_dd=6428  vol=227.7  score=+1522
+[20:31:28]   ❌ reject: score +1522 vs best +4642  (raw pnl +4736)
+[20:31:38] --- iter 4: trying [best] 2ax hg.revert_window=30 + vf.trend_coef=0.4 (variant x2_hgrevert_vftrend__41114)
+[20:31:41]   guardrail: local sim ok: 30000 ticks, 120153 orders (4.01/tick)
+[20:33:29]   asset_pnl = +2395  max_dd=2121  vol=91.5  score=+1335
+[20:33:29]   ❌ reject: score +1335 vs best +4642  (raw pnl +2395)
+[20:33:39] --- iter 5: trying [best] 2ax vf.ema_blend=0.5 + hg.imb_coef=0.2 (variant x2_vfema_bl_hgimb_co_97472)
+[20:33:42]   guardrail: local sim ok: 30000 ticks, 121415 orders (4.05/tick)
+[20:35:31]   asset_pnl = +7458  max_dd=5632  vol=267.1  score=+4642
+[20:35:31]   ❌ reject: score +4642 vs best +4642  (raw pnl +7458)
+[20:35:41] --- iter 6: trying [best] 2ax hg.vel_coef=0.5 + vf.ema_alpha=0.3 (variant x2_hgvel_co_vfema_al_33586)
+[20:35:44]   guardrail: local sim ok: 30000 ticks, 122337 orders (4.08/tick)
+[20:37:33]   asset_pnl = +5569  max_dd=4865  vol=268.2  score=+3136
+[20:37:33]   ❌ reject: score +3136 vs best +4642  (raw pnl +5569)
+[20:37:43] --- iter 7: trying [best] 2ax hg.revert_window=40 + vf.ema_alpha=0.3 (variant x2_hgrevert_vfema_al_59473)
+[20:37:46]   guardrail: local sim ok: 30000 ticks, 122221 orders (4.07/tick)
+[20:39:35]   asset_pnl = +4212  max_dd=4585  vol=195.4  score=+1919
+[20:39:35]   ❌ reject: score +1919 vs best +4642  (raw pnl +4212)
+[20:39:45] --- iter 8: trying [hg_half_spread_6] HG ema_blend=0.7 (variant hg_ema_blend_0p7)
+[20:39:48]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[20:42:27]   asset_pnl = +1784  max_dd=1152  vol=45.3  score=+1208
+[20:42:27]   ❌ reject: score +1208 vs best +4642  (raw pnl +1784)
+[20:42:37] --- iter 9: trying [hg_ema_alpha_0p05] VF trend_coef=0.1 (variant vf_trend_coef_0p1)
+[20:42:40]   guardrail: local sim ok: 30000 ticks, 120596 orders (4.02/tick)
+[20:44:29]   asset_pnl = +5312  max_dd=5934  vol=232.4  score=+2345
+[20:44:29]   ❌ reject: score +2345 vs best +4642  (raw pnl +5312)
+[20:44:39] --- iter 10: trying [best] 2ax hg.trend_coef=0.45 + hg.vel_coef=0.5 (variant x2_hgtrend__hgvel_co_83611)
+[20:44:42]   guardrail: local sim ok: 30000 ticks, 121346 orders (4.04/tick)
+[20:46:31]   asset_pnl = +6644  max_dd=3864  vol=227.5  score=+4712
+[20:46:31]   ✅ ACCEPT: score +70 over prev (+4642)
+[20:46:41] --- iter 11: trying [hg_trend_lag_8] HG trend_coef=0.3 (variant hg_trend_coef_0p3)
+[20:46:43]   guardrail: local sim ok: 30000 ticks, 120561 orders (4.02/tick)
+[20:49:35]   asset_pnl = +4352  max_dd=3802  vol=142.3  score=+2451
+[20:49:35]   ❌ reject: score +2451 vs best +4712  (raw pnl +4352)
+[20:49:45] --- iter 12: trying [hg_half_spread_6] HG revert_coef=0.25 (variant hg_revert_coef_0p25)
+[20:49:47]   guardrail: local sim ok: 30000 ticks, 119760 orders (3.99/tick)
+[20:51:36]   asset_pnl = +1703  max_dd=1152  vol=43.5  score=+1127
+[20:51:36]   ❌ reject: score +1127 vs best +4712  (raw pnl +1703)
+[20:51:46] --- iter 13: trying [best] 2ax hg.trend_lag=5 + hg.vel_coef=0.2 (variant x2_hgtrend__hgvel_co_86761)
+[20:51:49]   guardrail: local sim ok: 30000 ticks, 121480 orders (4.05/tick)
+[20:53:27]   asset_pnl = +8220  max_dd=4607  vol=259.3  score=+5916
+[20:53:27]   ✅ ACCEPT: score +1205 over prev (+4712)
+[20:53:37] --- iter 14: trying [best] 2ax vf.revert_coef=0.3 + hg.trend_lag=10 (variant x2_vfrevert_hgtrend__77518)
+[20:53:40]   guardrail: local sim ok: 30000 ticks, 120374 orders (4.01/tick)
+[20:56:31]   asset_pnl = +4175  max_dd=2849  vol=144.1  score=+2750
+[20:56:31]   ❌ reject: score +2750 vs best +5916  (raw pnl +4175)
+[20:56:41] --- iter 15: trying [x2_hgtrend__hgvel_] HG trend_coef=0.6 (variant hg_trend_coef_0p6)
+[20:56:44]   guardrail: local sim ok: 30000 ticks, 121401 orders (4.05/tick)
+[20:58:33]   asset_pnl = +6791  max_dd=5000  vol=248.7  score=+4291
+[20:58:33]   ❌ reject: score +4291 vs best +5916  (raw pnl +6791)
+[20:58:43] --- iter 16: trying [vf_vel_coef_0p1] HG revert_coef=0.4 (variant hg_revert_coef_0p4)
+[20:58:46]   guardrail: local sim ok: 30000 ticks, 121307 orders (4.04/tick)
+[21:00:35]   asset_pnl = +4709  max_dd=3735  vol=153.8  score=+2842
+[21:00:35]   ❌ reject: score +2842 vs best +5916  (raw pnl +4709)
+[21:00:45] --- iter 17: trying [x2_hgtrend__hgvel_] VF imb_coef=0.45 (variant vf_imb_coef_0p45)
+[21:00:48]   guardrail: local sim ok: 30000 ticks, 121958 orders (4.07/tick)
+[21:02:28]   asset_pnl = +6838  max_dd=4736  vol=271.3  score=+4470
+[21:02:28]   ❌ reject: score +4470 vs best +5916  (raw pnl +6838)
+[21:02:38] --- iter 18: trying [vf_vel_coef_0p1] HG soft_cap=180 (variant hg_soft_cap_180)
+[21:02:41]   guardrail: local sim ok: 30000 ticks, 121254 orders (4.04/tick)
+[21:04:29]   asset_pnl = +5368  max_dd=3997  vol=155.1  score=+3370
+[21:04:29]   ❌ reject: score +3370 vs best +5916  (raw pnl +5368)
+[21:04:39] --- iter 19: trying [best] 2ax hg.take_edge=9 + hg.long_ema_alpha=0.003 (variant x2_hgtake_e_hglong_e_66093)
+[21:04:42]   guardrail: local sim ok: 30000 ticks, 121332 orders (4.04/tick)
+[21:06:31]   asset_pnl = +6846  max_dd=3590  vol=216.5  score=+5051
+[21:06:31]   ❌ reject: score +5051 vs best +5916  (raw pnl +6846)
+[21:06:41] --- iter 20: trying [best] 2ax hg.trend_coef=0.35 + vf.vel_alpha=0.4 (variant x2_hgtrend__vfvel_al_39008)
+[21:06:45]   guardrail: local sim ok: 30000 ticks, 121434 orders (4.05/tick)
+[21:08:33]   asset_pnl = +7532  max_dd=6391  vol=301.1  score=+4336
+[21:08:33]   ❌ reject: score +4336 vs best +5916  (raw pnl +7532)
+[21:08:43] --- iter 21: trying [best] 2ax vf.revert_window=120 + hg.ema_blend=0.7 (variant x2_vfrevert_hgema_bl_67538)
+[21:08:46]   guardrail: local sim ok: 30000 ticks, 123740 orders (4.12/tick)
+[21:11:27]   asset_pnl = +7576  max_dd=5037  vol=297.4  score=+5058
+[21:11:27]   ❌ reject: score +5058 vs best +5916  (raw pnl +7576)
+[21:11:37] --- iter 22: trying [best] 2ax vf.ema_alpha=0.3 + vf.imb_coef=0.7 (variant x2_vfema_al_vfimb_co_70687)
+[21:11:40]   guardrail: local sim ok: 30000 ticks, 122906 orders (4.10/tick)
+[21:36:02] === Phase 1 VF probes — 6 variants ===
+[21:36:02] Baseline HG/VF loaded from state.json (best variant)
+[21:36:02] 
+[1/6] p1a_vf_vel_0p20: VF vel_coef 0.30 → 0.20
+[21:36:05]   guardrail: local sim ok: 30000 ticks, 121544 orders (4.05/tick)
+[21:37:33]   pnl=+7820  dd=4607  vol=263.5  score=+5516
+[21:38:03] 
+[2/6] p1b_vf_vel_0p15: VF vel_coef 0.30 → 0.15
+[21:38:06]   guardrail: local sim ok: 30000 ticks, 121571 orders (4.05/tick)
+[21:40:36]   pnl=+7820  dd=4607  vol=263.5  score=+5516
+[21:41:06] 
+[3/6] p1c_vf_half_spread_2: VF half_spread 1 → 2
+[22:07:04] === Phase 1 VF probes — 9 variants ===
+[22:07:04] Baseline HG/VF loaded from state.json (best variant)
+[22:07:04] [1/9] p1a_vf_vel_0p20 — already tested, skipping (use --rerun to retest)
+[22:07:04] [2/9] p1b_vf_vel_0p15 — already tested, skipping (use --rerun to retest)
+[22:07:04] 
+[3/9] p1c_vf_half_spread_2: VF half_spread 1 → 2
+[22:07:08]   guardrail: local sim ok: 30000 ticks, 121480 orders (4.05/tick)
+[22:08:01] === Research loop started: budget 5.0h, deadline 2026-04-26 03:08 ===
+[22:08:01] Best so far: pnl=8219.53125 variant=x2_hgtrend__hgvel_co_86761
+[22:08:01] --- iter 1: trying [best] 2ax hg.micro_coef=0.2 + vf.base_size=10 (variant x2_hgmicro__vfbase_s_64686)
+[22:08:05]   guardrail: local sim ok: 30000 ticks, 121479 orders (4.05/tick)
+[22:08:40]   no summary at /Users/jim/Desktop/team-east-backtester/prosperity-uploader/runs/2026-04-25_22-08-08_r3_assets_x2_hgmicro__vfbase_s_64686
+[22:08:40]   upload FAILED — skipping
+[22:08:50] --- iter 2: trying [preset_meanrev] VF long_ema_alpha=0.001 (variant vf_long_ema_alpha_0p001)
+[22:08:52]   REJECTED by guardrail: 29940 runtime exceptions in 3-day sim
+[22:08:52] --- iter 3: trying [best] 2ax hg.imb_coef=0.2 + hg.vel_coef=0.3 (variant x2_hgimb_co_hgvel_co_71200)
+[22:08:55]   guardrail: local sim ok: 30000 ticks, 121468 orders (4.05/tick)
+[22:10:33]   asset_pnl = +8220  max_dd=4607  vol=259.3  score=+5916
+[22:10:33]   ❌ reject: score +5916 vs best +5916  (raw pnl +8220)
+[22:10:43] --- iter 4: trying [best] 2ax hg.base_size=15 + hg.k_inv=0.05 (variant x2_hgbase_s_hgk_inv_78193)
+[22:10:46]   guardrail: local sim ok: 30000 ticks, 121480 orders (4.05/tick)
+[22:49:18] === Phase 2 stuck-position probes — 3 variants ===
+[22:49:18] Baseline HG/VF loaded from state.json (best variant)
+[22:49:18] 
+[1/3] p2a_hg_k_inv_0p5: HG k_inv 0.10 → 0.50
+[22:49:22]   guardrail: local sim ok: 30000 ticks, 121480 orders (4.05/tick)
+[22:51:31]   pnl=+8301 dd=4491 vol=256.4 score=+6056  Δpnl=+81 Δdd=-116 Δscore=+139
+[22:52:01] 
+[2/3] p2b_hg_soft_cap_100: HG soft_cap 150 → 100
+[22:52:04]   guardrail: local sim ok: 30000 ticks, 121480 orders (4.05/tick)
+[22:54:33]   pnl=+8160 dd=4491 vol=256.8 score=+5915  Δpnl=-60 Δdd=-116 Δscore=-2
+[22:55:03] 
+[3/3] p2c_hg_revert_coef_0: HG revert_coef 0.20 → 0
+[22:55:07]   guardrail: local sim ok: 30000 ticks, 121199 orders (4.04/tick)
+[22:57:36]   pnl=+5167 dd=3375 vol=151.4 score=+3480  Δpnl=-3053 Δdd=-1232 Δscore=-2437
+[22:57:36] 
+=== Phase 2 results ===
+[22:57:36]   baseline (x2_hgtrend__hgvel_co_86761): pnl=+8220 dd=4607 score=+5916
+[22:57:36]   p2a_hg_k_inv_0p5             pnl=  +8301 dd=  4491 score=  +6056  Δpnl=+81 Δdd=-116 Δscore=+139
+[22:57:36]   p2b_hg_soft_cap_100          pnl=  +8160 dd=  4491 score=  +5915  Δpnl=-60 Δdd=-116 Δscore=-2
+[22:57:36]   p2c_hg_revert_coef_0         pnl=  +5167 dd=  3375 score=  +3480  Δpnl=-3053 Δdd=-1232 Δscore=-2437
+[23:04:01] === Phase 3 engine-level probes — 3 variants ===
+[23:04:01] Baseline: pnl=+8220 dd=4607 score=+5916
+[23:04:01] 
+[1/3] p3a_hg_revert_gated: HG revert_gate_threshold=3.0 (gates revert when |trend|≥3)
+[23:04:05]   guardrail: local sim ok: 30000 ticks, 121215 orders (4.04/tick)
+[23:06:34]   pnl=+5167 dd=3375 vol=151.4 score=+3480  Δpnl=-3053 Δdd=-1232 Δscore=-2437
+[23:07:04] 
+[2/3] p3b_both_k_inv_0p5: HG+VF k_inv → 0.50
+[23:07:07]   guardrail: local sim ok: 30000 ticks, 121480 orders (4.05/tick)
+[23:08:35]   pnl=+8301 dd=4491 vol=256.4 score=+6056  Δpnl=+81 Δdd=-116 Δscore=+139
+[23:09:05] 
+[3/3] p3c_combined_e1_kinv: trend-gated revert + k_inv=0.5 on both (combined defensive)
+[23:09:09]   guardrail: local sim ok: 30000 ticks, 121215 orders (4.04/tick)
+[23:10:26]   pnl=+5167 dd=3375 vol=151.4 score=+3480  Δpnl=-3053 Δdd=-1232 Δscore=-2437
+[23:10:26] 
+=== Phase 3 results ===
+[23:10:26]   baseline pnl=+8220 dd=4607 score=+5916
+[23:10:26]   p3a_hg_revert_gated          pnl=  +5167 dd= 3375 score=  +3480  Δpnl=-3053 Δdd=-1232 Δscore=-2437
+[23:10:26]   p3b_both_k_inv_0p5           pnl=  +8301 dd= 4491 score=  +6056  Δpnl=+81 Δdd=-116 Δscore=+139
+[23:10:26]   p3c_combined_e1_kinv         pnl=  +5167 dd= 3375 score=  +3480  Δpnl=-3053 Δdd=-1232 Δscore=-2437
+[23:18:26] === Phase 4 — 7 variants ===
+[23:18:26] Baseline: pnl=+8220 dd=4607 score=+5916
+[23:18:26] 
+[1/7] p4a_hg_take_edge_3: HG take_edge 8 → 3
+[23:18:30]   guardrail: local sim ok: 30000 ticks, 124217 orders (4.14/tick)
+[23:20:29]   pnl=+138 dd=13467 vol=483.5 score=+-6595  Δpnl=-8082 Δdd=+8860 Δscore=-12512
+[23:20:59] 
+[2/7] p4b_hg_half_spread_3: HG half_spread 6 → 3
+[23:21:02]   guardrail: local sim ok: 30000 ticks, 121480 orders (4.05/tick)
+[23:22:28]   pnl=+8164 dd=4645 vol=262.5 score=+5842  Δpnl=-56 Δdd=+38 Δscore=-75
+[23:22:58] 
+[3/7] p4c_hg_k_inv_1p0: HG k_inv 0.10 → 1.0
+[23:23:02]   guardrail: local sim ok: 30000 ticks, 121480 orders (4.05/tick)
+[23:24:29]   pnl=+8305 dd=4224 vol=249.7 score=+6193  Δpnl=+85 Δdd=-383 Δscore=+277
+[23:24:59] 
+[4/7] p4d_hg_revert_gate_8: HG revert_gate_threshold=8 (real trends only)
+[23:25:03]   guardrail: local sim ok: 30000 ticks, 121249 orders (4.04/tick)
+[23:26:10]   upload RATE-LIMITED (5 retries exhausted)
+[23:26:10]   rate limited; sleeping 60s
+[23:28:28]   pnl=+6095 dd=3293 vol=160.1 score=+4449  Δpnl=-2125 Δdd=-1314 Δscore=-1468
+[23:28:58] 
+[5/7] p4e_hg_aggressive_bundle: HG take_edge=3 + half_spread=3 + k_inv=1.0
+[23:29:01]   guardrail: local sim ok: 30000 ticks, 124217 orders (4.14/tick)
+[23:30:09]   upload RATE-LIMITED (5 retries exhausted)
+[23:30:09]   rate limited; sleeping 60s
+[23:31:28]   no summary at /Users/jim/Desktop/team-east-backtester/prosperity-uploader/runs/2026-04-25_23-31-13_r3_assets_p4e_hg_aggressive_bundle
+[23:31:28]   upload FAILED — moving on
+[23:31:58] 
+[6/7] p4f_hg_stop_loss_basic: HG stop-loss: pos≥80, dd≥800, ticks≥100, size=20
+[23:32:02]   guardrail: local sim ok: 30000 ticks, 121480 orders (4.05/tick)
+[23:33:29]   pnl=+7524 dd=4515 vol=252.1 score=+5266  Δpnl=-696 Δdd=-92 Δscore=-650
+[23:33:59] 
+[7/7] p4g_hg_gate8_plus_stop: HG revert_gate=8 + stop-loss
+[23:34:03]   guardrail: local sim ok: 30000 ticks, 121249 orders (4.04/tick)
+[23:35:31]   pnl=+6095 dd=3293 vol=160.1 score=+4449  Δpnl=-2125 Δdd=-1314 Δscore=-1468
+[23:35:31] 
+=== Phase 4 results ===
+[23:35:31]   baseline pnl=+8220 dd=4607 score=+5916
+[23:35:31]   p4a_hg_take_edge_3           pnl=   +138 dd=13467 score=  -6595  Δpnl=-8082 Δdd=+8860 Δscore=-12512
+[23:35:31]   p4b_hg_half_spread_3         pnl=  +8164 dd= 4645 score=  +5842  Δpnl=-56 Δdd=+38 Δscore=-75
+[23:35:31]   p4c_hg_k_inv_1p0             pnl=  +8305 dd= 4224 score=  +6193  Δpnl=+85 Δdd=-383 Δscore=+277
+[23:35:31]   p4d_hg_revert_gate_8         pnl=  +6095 dd= 3293 score=  +4449  Δpnl=-2125 Δdd=-1314 Δscore=-1468
+[23:35:31]   p4e_hg_aggressive_bundle     upload failed
+[23:35:31]   p4f_hg_stop_loss_basic       pnl=  +7524 dd= 4515 score=  +5266  Δpnl=-696 Δdd=-92 Δscore=-650
+[23:35:31]   p4g_hg_gate8_plus_stop       pnl=  +6095 dd= 3293 score=  +4449  Δpnl=-2125 Δdd=-1314 Δscore=-1468

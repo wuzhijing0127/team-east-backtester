@@ -1,0 +1,86 @@
+{
+  "started_at": "2026-04-26T14:37:00",
+  "round_id": 7,
+  "best_hg_alpha": {
+    "trend_coef": 0.45,
+    "trend_lag": 5,
+    "vel_coef": 0.2,
+    "vel_alpha": 0.1,
+    "micro_coef": 0.4,
+    "imb_coef": 0.4,
+    "ema_alpha": 0.05
+  },
+  "best_vf_alpha": {
+    "trend_coef": 0.2,
+    "trend_lag": 5,
+    "vel_coef": 0.3,
+    "vel_alpha": 0.1,
+    "micro_coef": 0.2,
+    "imb_coef": 0.2,
+    "ema_alpha": 0.0
+  },
+  "best_pnl": 634.0,
+  "best_dd": 347.71875,
+  "best_score": 460.140625,
+  "best_variant_id": "alpha_baseline_v1",
+  "tried_keys": [
+    "vf.micro_coef=0.6",
+    "hg.trend_lag=12",
+    "hg.trend_coef=0.1"
+  ],
+  "history": [
+    {
+      "variant_id": "alpha_baseline_v1",
+      "asset_pnl": 634.0,
+      "max_drawdown": 824.4,
+      "score": 222.0,
+      "hg_alpha": {
+        "trend_coef": 0.45,
+        "trend_lag": 5,
+        "vel_coef": 0.2,
+        "vel_alpha": 0.1,
+        "micro_coef": 0.4,
+        "imb_coef": 0.4,
+        "ema_alpha": 0.05
+      },
+      "vf_alpha": {
+        "trend_coef": 0.0,
+        "trend_lag": 5,
+        "vel_coef": 0.3,
+        "vel_alpha": 0.1,
+        "micro_coef": 0.2,
+        "imb_coef": 0.2,
+        "ema_alpha": 0.0
+      },
+      "submission_id": 474050,
+      "when": "2026-04-26T14:37:00",
+      "note": "Round 4 (round_id=7) baseline \u2014 VFE structural fix applied; alpha knobs at seeded values"
+    },
+    {
+      "variant_id": "alpha_baseline_v1",
+      "label": "Alpha baseline \u2014 fixed structural + seeded alpha",
+      "asset_pnl": 634.0,
+      "max_drawdown": 347.71875,
+      "score": 460.140625,
+      "hg_alpha": {
+        "trend_coef": 0.45,
+        "trend_lag": 5,
+        "vel_coef": 0.2,
+        "vel_alpha": 0.1,
+        "micro_coef": 0.4,
+        "imb_coef": 0.4,
+        "ema_alpha": 0.05
+      },
+      "vf_alpha": {
+        "trend_coef": 0.2,
+        "trend_lag": 5,
+        "vel_coef": 0.3,
+        "vel_alpha": 0.1,
+        "micro_coef": 0.2,
+        "imb_coef": 0.2,
+        "ema_alpha": 0.0
+      },
+      "when": "2026-04-26T15:19:29.896229"
+    }
+  ]
+}

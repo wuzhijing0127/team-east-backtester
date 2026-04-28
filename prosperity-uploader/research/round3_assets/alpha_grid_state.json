@@ -1,0 +1,48 @@
+{
+  "phase": 1,
+  "best_hg_alpha": {
+    "ema_alpha": 0.2,
+    "trend_coef": 0.45,
+    "imb_coef": 0.4,
+    "vel_coef": 0.3
+  },
+  "best_vf_alpha": {
+    "ema_alpha": 0.0,
+    "trend_coef": 0.15,
+    "imb_coef": 0.3
+  },
+  "best_score": 1307.826171875,
+  "best_pnl": 1604.265625,
+  "best_dd": 592.87890625,
+  "best_variant_id": "g1_em0p2_tr0p45_im0p0_ve0p2",
+  "tried": {
+    "g1_em0p05_tr0p3_im0p0_ve0p2": 1179.40625,
+    "g1_em0p05_tr0p3_im0p0_ve0p3": 1179.40625,
+    "g1_em0p05_tr0p3_im0p4_ve0p2": 1179.40625,
+    "g1_em0p05_tr0p3_im0p4_ve0p3": 1179.40625,
+    "g1_em0p05_tr0p45_im0p0_ve0p2": 1179.40625,
+    "g1_em0p05_tr0p45_im0p0_ve0p3": 1179.40625,
+    "g1_em0p05_tr0p45_im0p4_ve0p2": 1179.40625,
+    "g1_em0p05_tr0p45_im0p4_ve0p3": 1179.40625,
+    "g1_em0p1_tr0p3_im0p0_ve0p2": 1044.177734375,
+    "g1_em0p1_tr0p3_im0p0_ve0p3": 1044.177734375,
+    "g1_em0p1_tr0p3_im0p4_ve0p2": 1044.177734375,
+    "g1_em0p1_tr0p3_im0p4_ve0p3": 1044.177734375,
+    "g1_em0p1_tr0p45_im0p0_ve0p2": 954.505859375,
+    "g1_em0p1_tr0p45_im0p0_ve0p3": 954.505859375,
+    "g1_em0p1_tr0p45_im0p4_ve0p2": 954.505859375,
+    "g1_em0p1_tr0p45_im0p4_ve0p3": 954.505859375,
+    "g1_em0p2_tr0p3_im0p0_ve0p2": 1165.755859375,
+    "g1_em0p2_tr0p3_im0p0_ve0p3": 1165.755859375,
+    "g1_em0p2_tr0p3_im0p4_ve0p2": 1165.755859375,
+    "g1_em0p2_tr0p3_im0p4_ve0p3": 1165.755859375,
+    "g1_em0p2_tr0p45_im0p0_ve0p2": 1307.826171875,
+    "g1_em0p2_tr0p45_im0p0_ve0p3": 1307.826171875,
+    "g1_em0p2_tr0p45_im0p4_ve0p2": 1307.826171875,
+    "g1_em0p2_tr0p45_im0p4_ve0p3": 1307.826171875,
+    "g2_em0p0_tr0p0_im0p0": 687.6796875,
+    "g2_em0p0_tr0p0_im0p3": 815.15625,
+    "g2_em0p0_tr0p15_im0p0": 949.6640625,
+    "g2_em0p0_tr0p15_im0p3": 1307.826171875
+  }
+}

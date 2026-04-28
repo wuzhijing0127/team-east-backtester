@@ -1,51 +1,26 @@
-# Prosperity Uploader Configuration
-# ==================================
-#
-# Bearer token: set via PROSPERITY_TOKEN env var or --token CLI flag.
-# Do NOT put your token in this file.
-
-# API endpoints
-base_api: "https://3dzqiahkw1.execute-api.eu-west-1.amazonaws.com/prod"
-upload_endpoint: "/submission/algo"                           # POST (singular)
-submissions_endpoint: "/submissions/algo/{round_id}"          # GET list (plural, round-scoped)
-graph_endpoint: "/submissions/algo/{submission_id}/graph"     # GET graph (plural)
-round_id: 3                                                   # current active competition round (server assigns round 3)
-
-# Timing (conservative defaults)
+base_api: https://3dzqiahkw1.execute-api.eu-west-1.amazonaws.com/prod
+upload_endpoint: /submission/algo
+submissions_endpoint: /submissions/algo/{round_id}
+graph_endpoint: /submissions/algo/{submission_id}/graph
+round_id: 7
 poll_interval_seconds: 10
-poll_timeout_seconds: 600
+poll_timeout_seconds: 1800
 upload_interval_seconds: 15
 request_timeout_seconds: 60
-
-# Retries
 max_retries: 5
 retry_backoff_base: 2.0
 retry_backoff_max: 60.0
-
-# Output paths
-output_dir: "./runs"
-results_csv: "./results/summary.csv"
-sqlite_db: "./results/results.sqlite"
-
-# Batch mode
-concurrency: 1  # sequential — do not increase without testing rate limits
-
-# ── Submission list response schema (confirmed) ──────────────────
-# These match the observed API response structure:
-#   { "data": { "items": [...], "page": 1, "pageSize": 50, "total": N } }
-submission_id_field: "id"
-submission_status_field: "status"
-submission_filename_field: "filename"
-submission_time_field: "submittedAt"
-submission_items_path: "data.items"
-submission_total_path: "data.total"
-
-# Status values from the platform
-status_finished: "FINISHED"
+output_dir: ./runs
+results_csv: ./results/summary.csv
+sqlite_db: ./results/results.sqlite
+concurrency: 1
+submission_id_field: id
+submission_status_field: status
+submission_filename_field: filename
+submission_time_field: submittedAt
+submission_items_path: data.items
+submission_total_path: data.total
+status_finished: FINISHED
 status_failed_values: []
-
-# Submission matching: how far before upload_time to accept a submittedAt match
 submission_match_time_tolerance_seconds: 120
-
-# Graph response schema
-graph_url_field: "data.url"
+graph_url_field: data.url
